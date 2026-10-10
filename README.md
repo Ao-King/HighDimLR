@@ -104,19 +104,9 @@ These commands do not rerun the Monte Carlo calculations.
 - `data/plotting/pde/`: the seven figure inputs.
 - `data/input_checksums.json`: hashes of copied numerical inputs.
 
-The full Table 3 and Table 6 records are distributed as three assets in the
-[`paper-2026-10-10` release](https://github.com/Ao-King/HighDimLR/releases/tag/paper-2026-10-10):
-
-```text
-regression-table3-records.zip
-pde-table6-results.zip
-soar-table6-records.zip
-```
-
-Extract them into the repository root. Their paths begin with `data/`, and each
-archive contains `checksums.json`. Asset hashes are in `data/result_archives.json`.
-The archives contain the selected final records rather than parameter-search
-history, logs or environment installations.
+The repository includes the selected final statistics and figure inputs.
+The full simulation records can be regenerated using the fixed configurations,
+saved inputs and reproducible random streams in the publication entry points.
 
 ## Verified AMAX environment
 
