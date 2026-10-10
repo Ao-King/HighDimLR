@@ -1,0 +1,1304 @@
+{
+  "Landweber": {
+    "run_id": "20261009-152934-3b0761",
+    "sources": [
+      {
+        "path": "Bootstrap_ARk.m",
+        "sha256": "23fbb530b97c161a286b96e0a42ea7c5b9576885d683c18a383c28b85168a5d5"
+      },
+      {
+        "path": "Bootstrap_FAR.m",
+        "sha256": "3451898c82f37f4cf4d7e2ef8c228d49d12c89e4126c07b28ec58d2da3052758"
+      },
+      {
+        "path": "Bootstrap_HBF.m",
+        "sha256": "0361cb55221638f5b788d292e72fcd4b17f2b22e58d8e4798deb39546b8f5dc4"
+      },
+      {
+        "path": "Bootstrap_Landweber.m",
+        "sha256": "98e8c320b113476989967070aefc8a88cccd04e02161b235a350f2f54391596e"
+      },
+      {
+        "path": "Bootstrap_Nesterov.m",
+        "sha256": "31319ec9ea4c962b576606b50d0d6b4150f42beac0659171705cc24bdd0fde1d"
+      },
+      {
+        "path": "Bootstrap_Showalter.m",
+        "sha256": "67684fd011d734b1434e8547418c41770d3b969c053ca2c2e52975fdc9cc8fd7"
+      },
+      {
+        "path": "Bootstrap_SOAR.m",
+        "sha256": "10237dc455ed21b0399a83342b7f0bff772e2c4cb4fd9545bcc5c3e1cd04cbde"
+      },
+      {
+        "path": "domain.m",
+        "sha256": "072343f1cd4c9a79f5ce4abe7c0ee017f8a419b5b6c4764394495b9901e01696"
+      },
+      {
+        "path": "export_pde_table.m",
+        "sha256": "f0bef7c10762c300f4df12885e968ae53a838f4231c6a1ce3de2687154151281"
+      },
+      {
+        "path": "Genertate_MatrixVector.m",
+        "sha256": "a8bdc8a81645be3eceaf69c549da6663b064f6fb27a2542874c860433840b0aa"
+      },
+      {
+        "path": "Geom.m",
+        "sha256": "509ce60f0b6d54fd2ad260d8bf1d8eb8457d5cc4d0cb115d5dffe4bca5d7107a"
+      },
+      {
+        "path": "gigure.m",
+        "sha256": "abac4fccaa4592caddbf65012d8dfd27ce38dbe1554025738bf639f907bdc051"
+      },
+      {
+        "path": "Mesh.m",
+        "sha256": "78762f792c316b00aca4a40a8aa79f784350a5bc9a50ccfbf7a79a31ac2a082b"
+      },
+      {
+        "path": "meshsize.m",
+        "sha256": "2744f78fe7c3bc6babb96e7d99a903f84009fdede53510dea66647e12bbfe230"
+      },
+      {
+        "path": "meshstruct.m",
+        "sha256": "74ff440e93f678b18e8161128b10994815295bf9ab9b7ab0f25e5032c256a2fb"
+      },
+      {
+        "path": "Observe.m",
+        "sha256": "a2f0ad4f406f689ed4815d2705a62fd31fff635b6f5b8906ca6ac9b9121f9e3f"
+      },
+      {
+        "path": "pde_experiment_config.m",
+        "sha256": "8d379d1bb02edf844a577d84e5dba6aa84b2387119b572cc8db83e4efb92a097"
+      },
+      {
+        "path": "pde_fit.m",
+        "sha256": "297377cfeedcc008c0062dc7fa3fbbefea6093a2915159cc805ded17a2010e41"
+      },
+      {
+        "path": "pde_legacy_solver.m",
+        "sha256": "3df083605f0451cbc4275225caa36ec4ea8cd66fb1f46219cc1e01c38c0f6b1d"
+      },
+      {
+        "path": "pde_noise.m",
+        "sha256": "518cc2a3f7128ae614698c3b35049b8f64d67e9677da2667f087c00bad1679bc"
+      },
+      {
+        "path": "pde_problem.m",
+        "sha256": "50f1a2e34c834d4751c11a5c396d060832f31f84f776a3be20319aa45fcb5193"
+      },
+      {
+        "path": "run_pde_experiment.m",
+        "sha256": "53d8ce2a23584f3ccf568d4865764c335bf7ace940acd9ec2cda60966782c2ec"
+      },
+      {
+        "path": "Solver_ARk_1.m",
+        "sha256": "89393b43c34be50c1a62f32ab122219e69aca0ce06cf85d3976c602e49d7b2c5"
+      },
+      {
+        "path": "Solver_ARk_2.m",
+        "sha256": "4b932c20afde4077eb021ec4a5b6f6f91f706d8c660e987514c25d064bc3a5b6"
+      },
+      {
+        "path": "Solver_FAR_1.m",
+        "sha256": "0bbd744f2564792d54e804ad74313e1f7e0240f513459bf228544adbffdce2a8"
+      },
+      {
+        "path": "Solver_FAR_2.m",
+        "sha256": "bc97b09c4855bebaf25b59223a5a995be475bda098a133d17c330a5e1db8b5c1"
+      },
+      {
+        "path": "Solver_HBF_1.m",
+        "sha256": "b361ee34e42713231c4692fdf9dde7c0aaa6e44a86de75913e7e2715e09ee58f"
+      },
+      {
+        "path": "Solver_HBF_2.m",
+        "sha256": "39322e565f72d4ca3500b419e589e11c3166540303bf48f345134022b6d196c5"
+      },
+      {
+        "path": "Solver_Landweber_1.m",
+        "sha256": "36397b572e2c88f05a7495220d97a5de65f246bf25dd72ac28f3c11cfe6a54b9"
+      },
+      {
+        "path": "Solver_Nesterov_1.m",
+        "sha256": "fae76f8e9e1fa6b958df8cebcce5c9ef430b4d51068a2ac2f9fe4d49a0c8773c"
+      },
+      {
+        "path": "Solver_Nesterov_2.m",
+        "sha256": "9f90346892e26807a6a5fdcd08f24450d177725a5296c183e4401f6935980002"
+      },
+      {
+        "path": "Solver_Showalter_1.m",
+        "sha256": "6f1c20458bf5445d7d717c43f41acfd114b9c5e8af194f2081c294844878ed05"
+      },
+      {
+        "path": "Solver_SOAR_1.m",
+        "sha256": "22446a2149d8b633d4bb374aa72e3e9fd2d6fc62cbe474dc4c82219fdf345820"
+      },
+      {
+        "path": "Solver_SOAR_2.m",
+        "sha256": "4edc816083a5f5bef0a12b78459a0a12387dd3ff40aec1c6d884e756edb35e23"
+      },
+      {
+        "path": "source_mass_sqrt.m",
+        "sha256": "91355f274e85f26897ba1dbe99f2cfc698ebcf4d33d59be8783d2b1610111c30"
+      },
+      {
+        "path": "Stiff.m",
+        "sha256": "a51b8fc88969cfb0498cb4a0aad6da3bbdc0af037957cacddc3c702149938698"
+      },
+      {
+        "path": "benchmarks/pde_gpu_preflight/pde_fit_batched.m",
+        "sha256": "7390869b2b47df19e0d5da37895ac8202c332d13ed32d1793805ba2031df3530"
+      },
+      {
+        "path": "benchmarks/pde_formal_cpu/pde_formal_replication.m",
+        "sha256": "43a2560c3e10f2a9ba507c13fefde2b03f2790448e2dc20a9aa6a29e10b8130c"
+      },
+      {
+        "path": "benchmarks/pde_coarse_tuning/pde_coarse_check_row.m",
+        "sha256": "1bd5c5298ca6b7b292d58bd4f198368ae02bcd0faf3fa78177acef75af37c839"
+      },
+      {
+        "path": "benchmarks/pde_coarse_tuning/pde_coarse_context.m",
+        "sha256": "8e359ad06bc185bfd60108709a0d22c83ac39b20ca4fd4d6e6e2ca0a4d1c1320"
+      },
+      {
+        "path": "benchmarks/pde_coarse_tuning/pde_coarse_json.m",
+        "sha256": "7a14f5ba27d8674556e58da5f57d6963f73e1d7f40a149af0c32875c638b42e4"
+      },
+      {
+        "path": "benchmarks/pde_coarse_tuning/pde_coarse_preflight.m",
+        "sha256": "a088b6a6fc50334c11d08d22ccb775053b98eb7eecb1395fed2eb964737595b8"
+      },
+      {
+        "path": "benchmarks/pde_coarse_tuning/pde_coarse_worker.m",
+        "sha256": "e63ce3bfd42dc87e7e783772fe337f837e6a5b535cf17e7f8a73f4b517c405b3"
+      },
+      {
+        "path": "benchmarks/pde_coarse_tuning/run_amax_coarse.py",
+        "sha256": "a0d64edcd752850d637824f1522f7ddf28e3513d98e2ad2f88cfb29ef2de33d5"
+      },
+      {
+        "path": "benchmarks/pde_coarse_tuning/remote_coarse_supervisor.py",
+        "sha256": "ba22d91074017a4c43bb36737f61985530483c9bab7a2b93662f2ea8764accbb"
+      }
+    ],
+    "execution_backend": "cpu-double-batched"
+  },
+  "Showalter": {
+    "run_id": "20261009-162551-22a6d5",
+    "sources": [
+      {
+        "path": "Bootstrap_ARk.m",
+        "sha256": "23fbb530b97c161a286b96e0a42ea7c5b9576885d683c18a383c28b85168a5d5"
+      },
+      {
+        "path": "Bootstrap_FAR.m",
+        "sha256": "3451898c82f37f4cf4d7e2ef8c228d49d12c89e4126c07b28ec58d2da3052758"
+      },
+      {
+        "path": "Bootstrap_HBF.m",
+        "sha256": "0361cb55221638f5b788d292e72fcd4b17f2b22e58d8e4798deb39546b8f5dc4"
+      },
+      {
+        "path": "Bootstrap_Landweber.m",
+        "sha256": "98e8c320b113476989967070aefc8a88cccd04e02161b235a350f2f54391596e"
+      },
+      {
+        "path": "Bootstrap_Nesterov.m",
+        "sha256": "31319ec9ea4c962b576606b50d0d6b4150f42beac0659171705cc24bdd0fde1d"
+      },
+      {
+        "path": "Bootstrap_Showalter.m",
+        "sha256": "67684fd011d734b1434e8547418c41770d3b969c053ca2c2e52975fdc9cc8fd7"
+      },
+      {
+        "path": "Bootstrap_SOAR.m",
+        "sha256": "10237dc455ed21b0399a83342b7f0bff772e2c4cb4fd9545bcc5c3e1cd04cbde"
+      },
+      {
+        "path": "domain.m",
+        "sha256": "072343f1cd4c9a79f5ce4abe7c0ee017f8a419b5b6c4764394495b9901e01696"
+      },
+      {
+        "path": "export_pde_table.m",
+        "sha256": "f0bef7c10762c300f4df12885e968ae53a838f4231c6a1ce3de2687154151281"
+      },
+      {
+        "path": "Genertate_MatrixVector.m",
+        "sha256": "a8bdc8a81645be3eceaf69c549da6663b064f6fb27a2542874c860433840b0aa"
+      },
+      {
+        "path": "Geom.m",
+        "sha256": "509ce60f0b6d54fd2ad260d8bf1d8eb8457d5cc4d0cb115d5dffe4bca5d7107a"
+      },
+      {
+        "path": "gigure.m",
+        "sha256": "abac4fccaa4592caddbf65012d8dfd27ce38dbe1554025738bf639f907bdc051"
+      },
+      {
+        "path": "Mesh.m",
+        "sha256": "78762f792c316b00aca4a40a8aa79f784350a5bc9a50ccfbf7a79a31ac2a082b"
+      },
+      {
+        "path": "meshsize.m",
+        "sha256": "2744f78fe7c3bc6babb96e7d99a903f84009fdede53510dea66647e12bbfe230"
+      },
+      {
+        "path": "meshstruct.m",
+        "sha256": "74ff440e93f678b18e8161128b10994815295bf9ab9b7ab0f25e5032c256a2fb"
+      },
+      {
+        "path": "Observe.m",
+        "sha256": "a2f0ad4f406f689ed4815d2705a62fd31fff635b6f5b8906ca6ac9b9121f9e3f"
+      },
+      {
+        "path": "pde_experiment_config.m",
+        "sha256": "8d379d1bb02edf844a577d84e5dba6aa84b2387119b572cc8db83e4efb92a097"
+      },
+      {
+        "path": "pde_fit.m",
+        "sha256": "297377cfeedcc008c0062dc7fa3fbbefea6093a2915159cc805ded17a2010e41"
+      },
+      {
+        "path": "pde_legacy_solver.m",
+        "sha256": "3df083605f0451cbc4275225caa36ec4ea8cd66fb1f46219cc1e01c38c0f6b1d"
+      },
+      {
+        "path": "pde_noise.m",
+        "sha256": "518cc2a3f7128ae614698c3b35049b8f64d67e9677da2667f087c00bad1679bc"
+      },
+      {
+        "path": "pde_problem.m",
+        "sha256": "50f1a2e34c834d4751c11a5c396d060832f31f84f776a3be20319aa45fcb5193"
+      },
+      {
+        "path": "run_pde_experiment.m",
+        "sha256": "53d8ce2a23584f3ccf568d4865764c335bf7ace940acd9ec2cda60966782c2ec"
+      },
+      {
+        "path": "Solver_ARk_1.m",
+        "sha256": "89393b43c34be50c1a62f32ab122219e69aca0ce06cf85d3976c602e49d7b2c5"
+      },
+      {
+        "path": "Solver_ARk_2.m",
+        "sha256": "4b932c20afde4077eb021ec4a5b6f6f91f706d8c660e987514c25d064bc3a5b6"
+      },
+      {
+        "path": "Solver_FAR_1.m",
+        "sha256": "0bbd744f2564792d54e804ad74313e1f7e0240f513459bf228544adbffdce2a8"
+      },
+      {
+        "path": "Solver_FAR_2.m",
+        "sha256": "bc97b09c4855bebaf25b59223a5a995be475bda098a133d17c330a5e1db8b5c1"
+      },
+      {
+        "path": "Solver_HBF_1.m",
+        "sha256": "b361ee34e42713231c4692fdf9dde7c0aaa6e44a86de75913e7e2715e09ee58f"
+      },
+      {
+        "path": "Solver_HBF_2.m",
+        "sha256": "39322e565f72d4ca3500b419e589e11c3166540303bf48f345134022b6d196c5"
+      },
+      {
+        "path": "Solver_Landweber_1.m",
+        "sha256": "36397b572e2c88f05a7495220d97a5de65f246bf25dd72ac28f3c11cfe6a54b9"
+      },
+      {
+        "path": "Solver_Nesterov_1.m",
+        "sha256": "fae76f8e9e1fa6b958df8cebcce5c9ef430b4d51068a2ac2f9fe4d49a0c8773c"
+      },
+      {
+        "path": "Solver_Nesterov_2.m",
+        "sha256": "9f90346892e26807a6a5fdcd08f24450d177725a5296c183e4401f6935980002"
+      },
+      {
+        "path": "Solver_Showalter_1.m",
+        "sha256": "6f1c20458bf5445d7d717c43f41acfd114b9c5e8af194f2081c294844878ed05"
+      },
+      {
+        "path": "Solver_SOAR_1.m",
+        "sha256": "22446a2149d8b633d4bb374aa72e3e9fd2d6fc62cbe474dc4c82219fdf345820"
+      },
+      {
+        "path": "Solver_SOAR_2.m",
+        "sha256": "4edc816083a5f5bef0a12b78459a0a12387dd3ff40aec1c6d884e756edb35e23"
+      },
+      {
+        "path": "source_mass_sqrt.m",
+        "sha256": "91355f274e85f26897ba1dbe99f2cfc698ebcf4d33d59be8783d2b1610111c30"
+      },
+      {
+        "path": "Stiff.m",
+        "sha256": "a51b8fc88969cfb0498cb4a0aad6da3bbdc0af037957cacddc3c702149938698"
+      },
+      {
+        "path": "benchmarks/pde_gpu_preflight/pde_fit_batched.m",
+        "sha256": "7390869b2b47df19e0d5da37895ac8202c332d13ed32d1793805ba2031df3530"
+      },
+      {
+        "path": "benchmarks/pde_formal_cpu/pde_formal_replication.m",
+        "sha256": "43a2560c3e10f2a9ba507c13fefde2b03f2790448e2dc20a9aa6a29e10b8130c"
+      },
+      {
+        "path": "benchmarks/pde_coarse_tuning/pde_coarse_check_row.m",
+        "sha256": "1bd5c5298ca6b7b292d58bd4f198368ae02bcd0faf3fa78177acef75af37c839"
+      },
+      {
+        "path": "benchmarks/pde_coarse_tuning/pde_coarse_context.m",
+        "sha256": "14f09566d3021a5d790ffaea94e7447af928c3d59e63d60f7404a911340f3854"
+      },
+      {
+        "path": "benchmarks/pde_coarse_tuning/pde_coarse_json.m",
+        "sha256": "7a14f5ba27d8674556e58da5f57d6963f73e1d7f40a149af0c32875c638b42e4"
+      },
+      {
+        "path": "benchmarks/pde_coarse_tuning/pde_coarse_preflight.m",
+        "sha256": "a088b6a6fc50334c11d08d22ccb775053b98eb7eecb1395fed2eb964737595b8"
+      },
+      {
+        "path": "benchmarks/pde_coarse_tuning/pde_coarse_worker.m",
+        "sha256": "e63ce3bfd42dc87e7e783772fe337f837e6a5b535cf17e7f8a73f4b517c405b3"
+      },
+      {
+        "path": "benchmarks/pde_coarse_tuning/run_amax_coarse.py",
+        "sha256": "384ac9f9716388b4e99d70cfc82c3c867dd69a25def8582030c9b28e07436d2f"
+      },
+      {
+        "path": "benchmarks/pde_coarse_tuning/remote_coarse_supervisor.py",
+        "sha256": "3450251f542745627d2218590b787d2bc7c2427bb52744c25e9b7636c34531b4"
+      }
+    ],
+    "execution_backend": "cpu-double-batched"
+  },
+  "HBF": {
+    "run_id": "20261009-174153-1b0d48",
+    "sources": [
+      {
+        "path": "Bootstrap_ARk.m",
+        "sha256": "23fbb530b97c161a286b96e0a42ea7c5b9576885d683c18a383c28b85168a5d5"
+      },
+      {
+        "path": "Bootstrap_FAR.m",
+        "sha256": "3451898c82f37f4cf4d7e2ef8c228d49d12c89e4126c07b28ec58d2da3052758"
+      },
+      {
+        "path": "Bootstrap_HBF.m",
+        "sha256": "0361cb55221638f5b788d292e72fcd4b17f2b22e58d8e4798deb39546b8f5dc4"
+      },
+      {
+        "path": "Bootstrap_Landweber.m",
+        "sha256": "98e8c320b113476989967070aefc8a88cccd04e02161b235a350f2f54391596e"
+      },
+      {
+        "path": "Bootstrap_Nesterov.m",
+        "sha256": "31319ec9ea4c962b576606b50d0d6b4150f42beac0659171705cc24bdd0fde1d"
+      },
+      {
+        "path": "Bootstrap_Showalter.m",
+        "sha256": "67684fd011d734b1434e8547418c41770d3b969c053ca2c2e52975fdc9cc8fd7"
+      },
+      {
+        "path": "Bootstrap_SOAR.m",
+        "sha256": "10237dc455ed21b0399a83342b7f0bff772e2c4cb4fd9545bcc5c3e1cd04cbde"
+      },
+      {
+        "path": "domain.m",
+        "sha256": "072343f1cd4c9a79f5ce4abe7c0ee017f8a419b5b6c4764394495b9901e01696"
+      },
+      {
+        "path": "export_pde_table.m",
+        "sha256": "f0bef7c10762c300f4df12885e968ae53a838f4231c6a1ce3de2687154151281"
+      },
+      {
+        "path": "Genertate_MatrixVector.m",
+        "sha256": "a8bdc8a81645be3eceaf69c549da6663b064f6fb27a2542874c860433840b0aa"
+      },
+      {
+        "path": "Geom.m",
+        "sha256": "509ce60f0b6d54fd2ad260d8bf1d8eb8457d5cc4d0cb115d5dffe4bca5d7107a"
+      },
+      {
+        "path": "gigure.m",
+        "sha256": "abac4fccaa4592caddbf65012d8dfd27ce38dbe1554025738bf639f907bdc051"
+      },
+      {
+        "path": "Mesh.m",
+        "sha256": "78762f792c316b00aca4a40a8aa79f784350a5bc9a50ccfbf7a79a31ac2a082b"
+      },
+      {
+        "path": "meshsize.m",
+        "sha256": "2744f78fe7c3bc6babb96e7d99a903f84009fdede53510dea66647e12bbfe230"
+      },
+      {
+        "path": "meshstruct.m",
+        "sha256": "74ff440e93f678b18e8161128b10994815295bf9ab9b7ab0f25e5032c256a2fb"
+      },
+      {
+        "path": "Observe.m",
+        "sha256": "a2f0ad4f406f689ed4815d2705a62fd31fff635b6f5b8906ca6ac9b9121f9e3f"
+      },
+      {
+        "path": "pde_experiment_config.m",
+        "sha256": "8d379d1bb02edf844a577d84e5dba6aa84b2387119b572cc8db83e4efb92a097"
+      },
+      {
+        "path": "pde_fit.m",
+        "sha256": "297377cfeedcc008c0062dc7fa3fbbefea6093a2915159cc805ded17a2010e41"
+      },
+      {
+        "path": "pde_legacy_solver.m",
+        "sha256": "3df083605f0451cbc4275225caa36ec4ea8cd66fb1f46219cc1e01c38c0f6b1d"
+      },
+      {
+        "path": "pde_noise.m",
+        "sha256": "518cc2a3f7128ae614698c3b35049b8f64d67e9677da2667f087c00bad1679bc"
+      },
+      {
+        "path": "pde_problem.m",
+        "sha256": "50f1a2e34c834d4751c11a5c396d060832f31f84f776a3be20319aa45fcb5193"
+      },
+      {
+        "path": "run_pde_experiment.m",
+        "sha256": "53d8ce2a23584f3ccf568d4865764c335bf7ace940acd9ec2cda60966782c2ec"
+      },
+      {
+        "path": "Solver_ARk_1.m",
+        "sha256": "89393b43c34be50c1a62f32ab122219e69aca0ce06cf85d3976c602e49d7b2c5"
+      },
+      {
+        "path": "Solver_ARk_2.m",
+        "sha256": "4b932c20afde4077eb021ec4a5b6f6f91f706d8c660e987514c25d064bc3a5b6"
+      },
+      {
+        "path": "Solver_FAR_1.m",
+        "sha256": "0bbd744f2564792d54e804ad74313e1f7e0240f513459bf228544adbffdce2a8"
+      },
+      {
+        "path": "Solver_FAR_2.m",
+        "sha256": "bc97b09c4855bebaf25b59223a5a995be475bda098a133d17c330a5e1db8b5c1"
+      },
+      {
+        "path": "Solver_HBF_1.m",
+        "sha256": "b361ee34e42713231c4692fdf9dde7c0aaa6e44a86de75913e7e2715e09ee58f"
+      },
+      {
+        "path": "Solver_HBF_2.m",
+        "sha256": "39322e565f72d4ca3500b419e589e11c3166540303bf48f345134022b6d196c5"
+      },
+      {
+        "path": "Solver_Landweber_1.m",
+        "sha256": "36397b572e2c88f05a7495220d97a5de65f246bf25dd72ac28f3c11cfe6a54b9"
+      },
+      {
+        "path": "Solver_Nesterov_1.m",
+        "sha256": "fae76f8e9e1fa6b958df8cebcce5c9ef430b4d51068a2ac2f9fe4d49a0c8773c"
+      },
+      {
+        "path": "Solver_Nesterov_2.m",
+        "sha256": "9f90346892e26807a6a5fdcd08f24450d177725a5296c183e4401f6935980002"
+      },
+      {
+        "path": "Solver_Showalter_1.m",
+        "sha256": "6f1c20458bf5445d7d717c43f41acfd114b9c5e8af194f2081c294844878ed05"
+      },
+      {
+        "path": "Solver_SOAR_1.m",
+        "sha256": "22446a2149d8b633d4bb374aa72e3e9fd2d6fc62cbe474dc4c82219fdf345820"
+      },
+      {
+        "path": "Solver_SOAR_2.m",
+        "sha256": "4edc816083a5f5bef0a12b78459a0a12387dd3ff40aec1c6d884e756edb35e23"
+      },
+      {
+        "path": "source_mass_sqrt.m",
+        "sha256": "91355f274e85f26897ba1dbe99f2cfc698ebcf4d33d59be8783d2b1610111c30"
+      },
+      {
+        "path": "Stiff.m",
+        "sha256": "a51b8fc88969cfb0498cb4a0aad6da3bbdc0af037957cacddc3c702149938698"
+      },
+      {
+        "path": "benchmarks/pde_gpu_preflight/pde_fit_batched.m",
+        "sha256": "7390869b2b47df19e0d5da37895ac8202c332d13ed32d1793805ba2031df3530"
+      },
+      {
+        "path": "benchmarks/pde_formal_cpu/pde_formal_replication.m",
+        "sha256": "43a2560c3e10f2a9ba507c13fefde2b03f2790448e2dc20a9aa6a29e10b8130c"
+      },
+      {
+        "path": "benchmarks/pde_coarse_tuning/pde_coarse_check_row.m",
+        "sha256": "1bd5c5298ca6b7b292d58bd4f198368ae02bcd0faf3fa78177acef75af37c839"
+      },
+      {
+        "path": "benchmarks/pde_coarse_tuning/pde_coarse_context.m",
+        "sha256": "e4cae8517c11c1df9cbcd590739edeb409dc3d38489455d4182a7341999924b2"
+      },
+      {
+        "path": "benchmarks/pde_coarse_tuning/pde_coarse_json.m",
+        "sha256": "7a14f5ba27d8674556e58da5f57d6963f73e1d7f40a149af0c32875c638b42e4"
+      },
+      {
+        "path": "benchmarks/pde_coarse_tuning/pde_coarse_preflight.m",
+        "sha256": "a088b6a6fc50334c11d08d22ccb775053b98eb7eecb1395fed2eb964737595b8"
+      },
+      {
+        "path": "benchmarks/pde_coarse_tuning/pde_coarse_worker.m",
+        "sha256": "e63ce3bfd42dc87e7e783772fe337f837e6a5b535cf17e7f8a73f4b517c405b3"
+      },
+      {
+        "path": "benchmarks/pde_coarse_tuning/run_amax_coarse.py",
+        "sha256": "f6a7c3640e9a8576c8a5676c38618dc69447e98216d35f17083bf66f5e272866"
+      },
+      {
+        "path": "benchmarks/pde_coarse_tuning/remote_coarse_supervisor.py",
+        "sha256": "4d7c2bad5464c70d5b18ed6fcaa95cdb768e78fe8d1420cf7ce1e747b75d5f8a"
+      }
+    ],
+    "execution_backend": "cpu-double-batched"
+  },
+  "ARk": {
+    "run_id": "20261009-222327-31a872",
+    "sources": [
+      {
+        "path": "Bootstrap_ARk.m",
+        "sha256": "23fbb530b97c161a286b96e0a42ea7c5b9576885d683c18a383c28b85168a5d5"
+      },
+      {
+        "path": "Bootstrap_FAR.m",
+        "sha256": "3451898c82f37f4cf4d7e2ef8c228d49d12c89e4126c07b28ec58d2da3052758"
+      },
+      {
+        "path": "Bootstrap_HBF.m",
+        "sha256": "0361cb55221638f5b788d292e72fcd4b17f2b22e58d8e4798deb39546b8f5dc4"
+      },
+      {
+        "path": "Bootstrap_Landweber.m",
+        "sha256": "98e8c320b113476989967070aefc8a88cccd04e02161b235a350f2f54391596e"
+      },
+      {
+        "path": "Bootstrap_Nesterov.m",
+        "sha256": "31319ec9ea4c962b576606b50d0d6b4150f42beac0659171705cc24bdd0fde1d"
+      },
+      {
+        "path": "Bootstrap_Showalter.m",
+        "sha256": "67684fd011d734b1434e8547418c41770d3b969c053ca2c2e52975fdc9cc8fd7"
+      },
+      {
+        "path": "Bootstrap_SOAR.m",
+        "sha256": "10237dc455ed21b0399a83342b7f0bff772e2c4cb4fd9545bcc5c3e1cd04cbde"
+      },
+      {
+        "path": "domain.m",
+        "sha256": "072343f1cd4c9a79f5ce4abe7c0ee017f8a419b5b6c4764394495b9901e01696"
+      },
+      {
+        "path": "export_pde_table.m",
+        "sha256": "f0bef7c10762c300f4df12885e968ae53a838f4231c6a1ce3de2687154151281"
+      },
+      {
+        "path": "Genertate_MatrixVector.m",
+        "sha256": "a8bdc8a81645be3eceaf69c549da6663b064f6fb27a2542874c860433840b0aa"
+      },
+      {
+        "path": "Geom.m",
+        "sha256": "509ce60f0b6d54fd2ad260d8bf1d8eb8457d5cc4d0cb115d5dffe4bca5d7107a"
+      },
+      {
+        "path": "gigure.m",
+        "sha256": "abac4fccaa4592caddbf65012d8dfd27ce38dbe1554025738bf639f907bdc051"
+      },
+      {
+        "path": "Mesh.m",
+        "sha256": "78762f792c316b00aca4a40a8aa79f784350a5bc9a50ccfbf7a79a31ac2a082b"
+      },
+      {
+        "path": "meshsize.m",
+        "sha256": "2744f78fe7c3bc6babb96e7d99a903f84009fdede53510dea66647e12bbfe230"
+      },
+      {
+        "path": "meshstruct.m",
+        "sha256": "74ff440e93f678b18e8161128b10994815295bf9ab9b7ab0f25e5032c256a2fb"
+      },
+      {
+        "path": "Observe.m",
+        "sha256": "a2f0ad4f406f689ed4815d2705a62fd31fff635b6f5b8906ca6ac9b9121f9e3f"
+      },
+      {
+        "path": "pde_experiment_config.m",
+        "sha256": "8d379d1bb02edf844a577d84e5dba6aa84b2387119b572cc8db83e4efb92a097"
+      },
+      {
+        "path": "pde_fit.m",
+        "sha256": "297377cfeedcc008c0062dc7fa3fbbefea6093a2915159cc805ded17a2010e41"
+      },
+      {
+        "path": "pde_legacy_solver.m",
+        "sha256": "3df083605f0451cbc4275225caa36ec4ea8cd66fb1f46219cc1e01c38c0f6b1d"
+      },
+      {
+        "path": "pde_noise.m",
+        "sha256": "518cc2a3f7128ae614698c3b35049b8f64d67e9677da2667f087c00bad1679bc"
+      },
+      {
+        "path": "pde_problem.m",
+        "sha256": "50f1a2e34c834d4751c11a5c396d060832f31f84f776a3be20319aa45fcb5193"
+      },
+      {
+        "path": "run_pde_experiment.m",
+        "sha256": "53d8ce2a23584f3ccf568d4865764c335bf7ace940acd9ec2cda60966782c2ec"
+      },
+      {
+        "path": "Solver_ARk_1.m",
+        "sha256": "89393b43c34be50c1a62f32ab122219e69aca0ce06cf85d3976c602e49d7b2c5"
+      },
+      {
+        "path": "Solver_ARk_2.m",
+        "sha256": "4b932c20afde4077eb021ec4a5b6f6f91f706d8c660e987514c25d064bc3a5b6"
+      },
+      {
+        "path": "Solver_FAR_1.m",
+        "sha256": "0bbd744f2564792d54e804ad74313e1f7e0240f513459bf228544adbffdce2a8"
+      },
+      {
+        "path": "Solver_FAR_2.m",
+        "sha256": "bc97b09c4855bebaf25b59223a5a995be475bda098a133d17c330a5e1db8b5c1"
+      },
+      {
+        "path": "Solver_HBF_1.m",
+        "sha256": "b361ee34e42713231c4692fdf9dde7c0aaa6e44a86de75913e7e2715e09ee58f"
+      },
+      {
+        "path": "Solver_HBF_2.m",
+        "sha256": "39322e565f72d4ca3500b419e589e11c3166540303bf48f345134022b6d196c5"
+      },
+      {
+        "path": "Solver_Landweber_1.m",
+        "sha256": "36397b572e2c88f05a7495220d97a5de65f246bf25dd72ac28f3c11cfe6a54b9"
+      },
+      {
+        "path": "Solver_Nesterov_1.m",
+        "sha256": "fae76f8e9e1fa6b958df8cebcce5c9ef430b4d51068a2ac2f9fe4d49a0c8773c"
+      },
+      {
+        "path": "Solver_Nesterov_2.m",
+        "sha256": "9f90346892e26807a6a5fdcd08f24450d177725a5296c183e4401f6935980002"
+      },
+      {
+        "path": "Solver_Showalter_1.m",
+        "sha256": "6f1c20458bf5445d7d717c43f41acfd114b9c5e8af194f2081c294844878ed05"
+      },
+      {
+        "path": "Solver_SOAR_1.m",
+        "sha256": "22446a2149d8b633d4bb374aa72e3e9fd2d6fc62cbe474dc4c82219fdf345820"
+      },
+      {
+        "path": "Solver_SOAR_2.m",
+        "sha256": "4edc816083a5f5bef0a12b78459a0a12387dd3ff40aec1c6d884e756edb35e23"
+      },
+      {
+        "path": "source_mass_sqrt.m",
+        "sha256": "91355f274e85f26897ba1dbe99f2cfc698ebcf4d33d59be8783d2b1610111c30"
+      },
+      {
+        "path": "Stiff.m",
+        "sha256": "a51b8fc88969cfb0498cb4a0aad6da3bbdc0af037957cacddc3c702149938698"
+      },
+      {
+        "path": "benchmarks/pde_gpu_preflight/pde_fit_batched.m",
+        "sha256": "7390869b2b47df19e0d5da37895ac8202c332d13ed32d1793805ba2031df3530"
+      },
+      {
+        "path": "benchmarks/pde_formal_cpu/pde_formal_replication.m",
+        "sha256": "43a2560c3e10f2a9ba507c13fefde2b03f2790448e2dc20a9aa6a29e10b8130c"
+      },
+      {
+        "path": "benchmarks/pde_coarse_tuning/pde_coarse_check_row.m",
+        "sha256": "d364b3a90f66a992bd65d560da593694461a072d8697f2f38fbe466d0853c208"
+      },
+      {
+        "path": "benchmarks/pde_coarse_tuning/pde_coarse_context.m",
+        "sha256": "af86486c2006524be492623f7228fe00a1235da4ad8547c92c2c5d916125c3da"
+      },
+      {
+        "path": "benchmarks/pde_coarse_tuning/pde_coarse_json.m",
+        "sha256": "7a14f5ba27d8674556e58da5f57d6963f73e1d7f40a149af0c32875c638b42e4"
+      },
+      {
+        "path": "benchmarks/pde_coarse_tuning/pde_coarse_preflight.m",
+        "sha256": "f8bf492cd1155cc1901e207ad99bed9d58944bf096276144e6ab30fa916803f8"
+      },
+      {
+        "path": "benchmarks/pde_coarse_tuning/pde_coarse_worker.m",
+        "sha256": "43d8869217c63ef55d779150eed34b11a4805b27bc55f1456da247a729c9701e"
+      },
+      {
+        "path": "benchmarks/pde_coarse_tuning/run_amax_coarse.py",
+        "sha256": "8a24c495e867aa8003ff66088708008ca621e98351f2c48082a9ce680f73221f"
+      },
+      {
+        "path": "benchmarks/pde_coarse_tuning/remote_coarse_supervisor.py",
+        "sha256": "61282bddc0180c9a0b3c2502444e5f14741628ed7118a979efa087a0bc53b8d6"
+      }
+    ],
+    "execution_backend": "cpu-double-batched"
+  },
+  "SOAR": {
+    "run_id": "20261009-113733-630201",
+    "sources": [
+      {
+        "path": "Bootstrap_ARk.m",
+        "sha256": "23fbb530b97c161a286b96e0a42ea7c5b9576885d683c18a383c28b85168a5d5"
+      },
+      {
+        "path": "Bootstrap_FAR.m",
+        "sha256": "3451898c82f37f4cf4d7e2ef8c228d49d12c89e4126c07b28ec58d2da3052758"
+      },
+      {
+        "path": "Bootstrap_HBF.m",
+        "sha256": "0361cb55221638f5b788d292e72fcd4b17f2b22e58d8e4798deb39546b8f5dc4"
+      },
+      {
+        "path": "Bootstrap_Landweber.m",
+        "sha256": "98e8c320b113476989967070aefc8a88cccd04e02161b235a350f2f54391596e"
+      },
+      {
+        "path": "Bootstrap_Nesterov.m",
+        "sha256": "31319ec9ea4c962b576606b50d0d6b4150f42beac0659171705cc24bdd0fde1d"
+      },
+      {
+        "path": "Bootstrap_Showalter.m",
+        "sha256": "67684fd011d734b1434e8547418c41770d3b969c053ca2c2e52975fdc9cc8fd7"
+      },
+      {
+        "path": "Bootstrap_SOAR.m",
+        "sha256": "10237dc455ed21b0399a83342b7f0bff772e2c4cb4fd9545bcc5c3e1cd04cbde"
+      },
+      {
+        "path": "domain.m",
+        "sha256": "072343f1cd4c9a79f5ce4abe7c0ee017f8a419b5b6c4764394495b9901e01696"
+      },
+      {
+        "path": "export_pde_table.m",
+        "sha256": "f0bef7c10762c300f4df12885e968ae53a838f4231c6a1ce3de2687154151281"
+      },
+      {
+        "path": "Genertate_MatrixVector.m",
+        "sha256": "a8bdc8a81645be3eceaf69c549da6663b064f6fb27a2542874c860433840b0aa"
+      },
+      {
+        "path": "Geom.m",
+        "sha256": "509ce60f0b6d54fd2ad260d8bf1d8eb8457d5cc4d0cb115d5dffe4bca5d7107a"
+      },
+      {
+        "path": "gigure.m",
+        "sha256": "abac4fccaa4592caddbf65012d8dfd27ce38dbe1554025738bf639f907bdc051"
+      },
+      {
+        "path": "Mesh.m",
+        "sha256": "78762f792c316b00aca4a40a8aa79f784350a5bc9a50ccfbf7a79a31ac2a082b"
+      },
+      {
+        "path": "meshsize.m",
+        "sha256": "2744f78fe7c3bc6babb96e7d99a903f84009fdede53510dea66647e12bbfe230"
+      },
+      {
+        "path": "meshstruct.m",
+        "sha256": "74ff440e93f678b18e8161128b10994815295bf9ab9b7ab0f25e5032c256a2fb"
+      },
+      {
+        "path": "Observe.m",
+        "sha256": "a2f0ad4f406f689ed4815d2705a62fd31fff635b6f5b8906ca6ac9b9121f9e3f"
+      },
+      {
+        "path": "pde_experiment_config.m",
+        "sha256": "8d379d1bb02edf844a577d84e5dba6aa84b2387119b572cc8db83e4efb92a097"
+      },
+      {
+        "path": "pde_fit.m",
+        "sha256": "297377cfeedcc008c0062dc7fa3fbbefea6093a2915159cc805ded17a2010e41"
+      },
+      {
+        "path": "pde_legacy_solver.m",
+        "sha256": "3df083605f0451cbc4275225caa36ec4ea8cd66fb1f46219cc1e01c38c0f6b1d"
+      },
+      {
+        "path": "pde_noise.m",
+        "sha256": "518cc2a3f7128ae614698c3b35049b8f64d67e9677da2667f087c00bad1679bc"
+      },
+      {
+        "path": "pde_problem.m",
+        "sha256": "50f1a2e34c834d4751c11a5c396d060832f31f84f776a3be20319aa45fcb5193"
+      },
+      {
+        "path": "run_pde_experiment.m",
+        "sha256": "53d8ce2a23584f3ccf568d4865764c335bf7ace940acd9ec2cda60966782c2ec"
+      },
+      {
+        "path": "Solver_ARk_1.m",
+        "sha256": "89393b43c34be50c1a62f32ab122219e69aca0ce06cf85d3976c602e49d7b2c5"
+      },
+      {
+        "path": "Solver_ARk_2.m",
+        "sha256": "4b932c20afde4077eb021ec4a5b6f6f91f706d8c660e987514c25d064bc3a5b6"
+      },
+      {
+        "path": "Solver_FAR_1.m",
+        "sha256": "0bbd744f2564792d54e804ad74313e1f7e0240f513459bf228544adbffdce2a8"
+      },
+      {
+        "path": "Solver_FAR_2.m",
+        "sha256": "bc97b09c4855bebaf25b59223a5a995be475bda098a133d17c330a5e1db8b5c1"
+      },
+      {
+        "path": "Solver_HBF_1.m",
+        "sha256": "b361ee34e42713231c4692fdf9dde7c0aaa6e44a86de75913e7e2715e09ee58f"
+      },
+      {
+        "path": "Solver_HBF_2.m",
+        "sha256": "39322e565f72d4ca3500b419e589e11c3166540303bf48f345134022b6d196c5"
+      },
+      {
+        "path": "Solver_Landweber_1.m",
+        "sha256": "36397b572e2c88f05a7495220d97a5de65f246bf25dd72ac28f3c11cfe6a54b9"
+      },
+      {
+        "path": "Solver_Nesterov_1.m",
+        "sha256": "fae76f8e9e1fa6b958df8cebcce5c9ef430b4d51068a2ac2f9fe4d49a0c8773c"
+      },
+      {
+        "path": "Solver_Nesterov_2.m",
+        "sha256": "9f90346892e26807a6a5fdcd08f24450d177725a5296c183e4401f6935980002"
+      },
+      {
+        "path": "Solver_Showalter_1.m",
+        "sha256": "6f1c20458bf5445d7d717c43f41acfd114b9c5e8af194f2081c294844878ed05"
+      },
+      {
+        "path": "Solver_SOAR_1.m",
+        "sha256": "22446a2149d8b633d4bb374aa72e3e9fd2d6fc62cbe474dc4c82219fdf345820"
+      },
+      {
+        "path": "Solver_SOAR_2.m",
+        "sha256": "4edc816083a5f5bef0a12b78459a0a12387dd3ff40aec1c6d884e756edb35e23"
+      },
+      {
+        "path": "source_mass_sqrt.m",
+        "sha256": "91355f274e85f26897ba1dbe99f2cfc698ebcf4d33d59be8783d2b1610111c30"
+      },
+      {
+        "path": "Stiff.m",
+        "sha256": "a51b8fc88969cfb0498cb4a0aad6da3bbdc0af037957cacddc3c702149938698"
+      },
+      {
+        "path": "benchmarks/pde_gpu_preflight/pde_fit_batched.m",
+        "sha256": "7390869b2b47df19e0d5da37895ac8202c332d13ed32d1793805ba2031df3530"
+      },
+      {
+        "path": "benchmarks/pde_formal_cpu/pde_formal_replication.m",
+        "sha256": "43a2560c3e10f2a9ba507c13fefde2b03f2790448e2dc20a9aa6a29e10b8130c"
+      },
+      {
+        "path": "benchmarks/pde_coarse_tuning/pde_coarse_check_row.m",
+        "sha256": "1bd5c5298ca6b7b292d58bd4f198368ae02bcd0faf3fa78177acef75af37c839"
+      },
+      {
+        "path": "benchmarks/pde_coarse_tuning/pde_coarse_json.m",
+        "sha256": "7a14f5ba27d8674556e58da5f57d6963f73e1d7f40a149af0c32875c638b42e4"
+      },
+      {
+        "path": "benchmarks/pde_soar_single_sample/run_soar_single_sample.m",
+        "sha256": "1b8fc0b90176eee55f1c4483d0f975c705b7ef9e5db3bd217b83f37bac30c539"
+      },
+      {
+        "path": "benchmarks/pde_soar_single_sample/run_amax_single_sample.py",
+        "sha256": "39ac0452110b2b9386c58f45680746da12d17f0ccb013fe1d41121ec4bb28f60"
+      }
+    ],
+    "execution_backend": "single-session-cpu-double"
+  },
+  "Nesterov": {
+    "run_id": "20261009-134015-a5f7f5",
+    "sources": [
+      {
+        "path": "Bootstrap_ARk.m",
+        "sha256": "23fbb530b97c161a286b96e0a42ea7c5b9576885d683c18a383c28b85168a5d5"
+      },
+      {
+        "path": "Bootstrap_FAR.m",
+        "sha256": "3451898c82f37f4cf4d7e2ef8c228d49d12c89e4126c07b28ec58d2da3052758"
+      },
+      {
+        "path": "Bootstrap_HBF.m",
+        "sha256": "0361cb55221638f5b788d292e72fcd4b17f2b22e58d8e4798deb39546b8f5dc4"
+      },
+      {
+        "path": "Bootstrap_Landweber.m",
+        "sha256": "98e8c320b113476989967070aefc8a88cccd04e02161b235a350f2f54391596e"
+      },
+      {
+        "path": "Bootstrap_Nesterov.m",
+        "sha256": "31319ec9ea4c962b576606b50d0d6b4150f42beac0659171705cc24bdd0fde1d"
+      },
+      {
+        "path": "Bootstrap_Showalter.m",
+        "sha256": "67684fd011d734b1434e8547418c41770d3b969c053ca2c2e52975fdc9cc8fd7"
+      },
+      {
+        "path": "Bootstrap_SOAR.m",
+        "sha256": "10237dc455ed21b0399a83342b7f0bff772e2c4cb4fd9545bcc5c3e1cd04cbde"
+      },
+      {
+        "path": "domain.m",
+        "sha256": "072343f1cd4c9a79f5ce4abe7c0ee017f8a419b5b6c4764394495b9901e01696"
+      },
+      {
+        "path": "export_pde_table.m",
+        "sha256": "f0bef7c10762c300f4df12885e968ae53a838f4231c6a1ce3de2687154151281"
+      },
+      {
+        "path": "Genertate_MatrixVector.m",
+        "sha256": "a8bdc8a81645be3eceaf69c549da6663b064f6fb27a2542874c860433840b0aa"
+      },
+      {
+        "path": "Geom.m",
+        "sha256": "509ce60f0b6d54fd2ad260d8bf1d8eb8457d5cc4d0cb115d5dffe4bca5d7107a"
+      },
+      {
+        "path": "gigure.m",
+        "sha256": "abac4fccaa4592caddbf65012d8dfd27ce38dbe1554025738bf639f907bdc051"
+      },
+      {
+        "path": "Mesh.m",
+        "sha256": "78762f792c316b00aca4a40a8aa79f784350a5bc9a50ccfbf7a79a31ac2a082b"
+      },
+      {
+        "path": "meshsize.m",
+        "sha256": "2744f78fe7c3bc6babb96e7d99a903f84009fdede53510dea66647e12bbfe230"
+      },
+      {
+        "path": "meshstruct.m",
+        "sha256": "74ff440e93f678b18e8161128b10994815295bf9ab9b7ab0f25e5032c256a2fb"
+      },
+      {
+        "path": "Observe.m",
+        "sha256": "a2f0ad4f406f689ed4815d2705a62fd31fff635b6f5b8906ca6ac9b9121f9e3f"
+      },
+      {
+        "path": "pde_experiment_config.m",
+        "sha256": "8d379d1bb02edf844a577d84e5dba6aa84b2387119b572cc8db83e4efb92a097"
+      },
+      {
+        "path": "pde_fit.m",
+        "sha256": "297377cfeedcc008c0062dc7fa3fbbefea6093a2915159cc805ded17a2010e41"
+      },
+      {
+        "path": "pde_legacy_solver.m",
+        "sha256": "3df083605f0451cbc4275225caa36ec4ea8cd66fb1f46219cc1e01c38c0f6b1d"
+      },
+      {
+        "path": "pde_noise.m",
+        "sha256": "518cc2a3f7128ae614698c3b35049b8f64d67e9677da2667f087c00bad1679bc"
+      },
+      {
+        "path": "pde_problem.m",
+        "sha256": "50f1a2e34c834d4751c11a5c396d060832f31f84f776a3be20319aa45fcb5193"
+      },
+      {
+        "path": "run_pde_experiment.m",
+        "sha256": "53d8ce2a23584f3ccf568d4865764c335bf7ace940acd9ec2cda60966782c2ec"
+      },
+      {
+        "path": "Solver_ARk_1.m",
+        "sha256": "89393b43c34be50c1a62f32ab122219e69aca0ce06cf85d3976c602e49d7b2c5"
+      },
+      {
+        "path": "Solver_ARk_2.m",
+        "sha256": "4b932c20afde4077eb021ec4a5b6f6f91f706d8c660e987514c25d064bc3a5b6"
+      },
+      {
+        "path": "Solver_FAR_1.m",
+        "sha256": "0bbd744f2564792d54e804ad74313e1f7e0240f513459bf228544adbffdce2a8"
+      },
+      {
+        "path": "Solver_FAR_2.m",
+        "sha256": "bc97b09c4855bebaf25b59223a5a995be475bda098a133d17c330a5e1db8b5c1"
+      },
+      {
+        "path": "Solver_HBF_1.m",
+        "sha256": "b361ee34e42713231c4692fdf9dde7c0aaa6e44a86de75913e7e2715e09ee58f"
+      },
+      {
+        "path": "Solver_HBF_2.m",
+        "sha256": "39322e565f72d4ca3500b419e589e11c3166540303bf48f345134022b6d196c5"
+      },
+      {
+        "path": "Solver_Landweber_1.m",
+        "sha256": "36397b572e2c88f05a7495220d97a5de65f246bf25dd72ac28f3c11cfe6a54b9"
+      },
+      {
+        "path": "Solver_Nesterov_1.m",
+        "sha256": "fae76f8e9e1fa6b958df8cebcce5c9ef430b4d51068a2ac2f9fe4d49a0c8773c"
+      },
+      {
+        "path": "Solver_Nesterov_2.m",
+        "sha256": "9f90346892e26807a6a5fdcd08f24450d177725a5296c183e4401f6935980002"
+      },
+      {
+        "path": "Solver_Showalter_1.m",
+        "sha256": "6f1c20458bf5445d7d717c43f41acfd114b9c5e8af194f2081c294844878ed05"
+      },
+      {
+        "path": "Solver_SOAR_1.m",
+        "sha256": "22446a2149d8b633d4bb374aa72e3e9fd2d6fc62cbe474dc4c82219fdf345820"
+      },
+      {
+        "path": "Solver_SOAR_2.m",
+        "sha256": "4edc816083a5f5bef0a12b78459a0a12387dd3ff40aec1c6d884e756edb35e23"
+      },
+      {
+        "path": "source_mass_sqrt.m",
+        "sha256": "91355f274e85f26897ba1dbe99f2cfc698ebcf4d33d59be8783d2b1610111c30"
+      },
+      {
+        "path": "Stiff.m",
+        "sha256": "a51b8fc88969cfb0498cb4a0aad6da3bbdc0af037957cacddc3c702149938698"
+      },
+      {
+        "path": "benchmarks/pde_gpu_preflight/pde_fit_batched.m",
+        "sha256": "7390869b2b47df19e0d5da37895ac8202c332d13ed32d1793805ba2031df3530"
+      },
+      {
+        "path": "benchmarks/pde_formal_cpu/pde_formal_replication.m",
+        "sha256": "43a2560c3e10f2a9ba507c13fefde2b03f2790448e2dc20a9aa6a29e10b8130c"
+      },
+      {
+        "path": "benchmarks/pde_coarse_tuning/pde_coarse_check_row.m",
+        "sha256": "1bd5c5298ca6b7b292d58bd4f198368ae02bcd0faf3fa78177acef75af37c839"
+      },
+      {
+        "path": "benchmarks/pde_coarse_tuning/pde_coarse_context.m",
+        "sha256": "4b2a8fee547440809f2cb829783eca37852050f1c688cdf7d490888f9ca7fb32"
+      },
+      {
+        "path": "benchmarks/pde_coarse_tuning/pde_coarse_json.m",
+        "sha256": "7a14f5ba27d8674556e58da5f57d6963f73e1d7f40a149af0c32875c638b42e4"
+      },
+      {
+        "path": "benchmarks/pde_coarse_tuning/pde_coarse_preflight.m",
+        "sha256": "a088b6a6fc50334c11d08d22ccb775053b98eb7eecb1395fed2eb964737595b8"
+      },
+      {
+        "path": "benchmarks/pde_coarse_tuning/pde_coarse_worker.m",
+        "sha256": "e63ce3bfd42dc87e7e783772fe337f837e6a5b535cf17e7f8a73f4b517c405b3"
+      },
+      {
+        "path": "benchmarks/pde_coarse_tuning/run_amax_coarse.py",
+        "sha256": "eb14a51336dd21083d5baa6b0617f0eb9666ee5183c415c6808cee4668d9a7a4"
+      },
+      {
+        "path": "benchmarks/pde_coarse_tuning/remote_coarse_supervisor.py",
+        "sha256": "2c7154060c6588508099a5ad5294b4f252a9569cf8cfb7148caf9cf25ba08940"
+      }
+    ],
+    "execution_backend": "cpu-double-batched"
+  },
+  "FAR": {
+    "run_id": "20261009-204421-eb2ea6",
+    "sources": [
+      {
+        "path": "Bootstrap_ARk.m",
+        "sha256": "23fbb530b97c161a286b96e0a42ea7c5b9576885d683c18a383c28b85168a5d5"
+      },
+      {
+        "path": "Bootstrap_FAR.m",
+        "sha256": "3451898c82f37f4cf4d7e2ef8c228d49d12c89e4126c07b28ec58d2da3052758"
+      },
+      {
+        "path": "Bootstrap_HBF.m",
+        "sha256": "0361cb55221638f5b788d292e72fcd4b17f2b22e58d8e4798deb39546b8f5dc4"
+      },
+      {
+        "path": "Bootstrap_Landweber.m",
+        "sha256": "98e8c320b113476989967070aefc8a88cccd04e02161b235a350f2f54391596e"
+      },
+      {
+        "path": "Bootstrap_Nesterov.m",
+        "sha256": "31319ec9ea4c962b576606b50d0d6b4150f42beac0659171705cc24bdd0fde1d"
+      },
+      {
+        "path": "Bootstrap_Showalter.m",
+        "sha256": "67684fd011d734b1434e8547418c41770d3b969c053ca2c2e52975fdc9cc8fd7"
+      },
+      {
+        "path": "Bootstrap_SOAR.m",
+        "sha256": "10237dc455ed21b0399a83342b7f0bff772e2c4cb4fd9545bcc5c3e1cd04cbde"
+      },
+      {
+        "path": "domain.m",
+        "sha256": "072343f1cd4c9a79f5ce4abe7c0ee017f8a419b5b6c4764394495b9901e01696"
+      },
+      {
+        "path": "export_pde_table.m",
+        "sha256": "f0bef7c10762c300f4df12885e968ae53a838f4231c6a1ce3de2687154151281"
+      },
+      {
+        "path": "Genertate_MatrixVector.m",
+        "sha256": "a8bdc8a81645be3eceaf69c549da6663b064f6fb27a2542874c860433840b0aa"
+      },
+      {
+        "path": "Geom.m",
+        "sha256": "509ce60f0b6d54fd2ad260d8bf1d8eb8457d5cc4d0cb115d5dffe4bca5d7107a"
+      },
+      {
+        "path": "gigure.m",
+        "sha256": "abac4fccaa4592caddbf65012d8dfd27ce38dbe1554025738bf639f907bdc051"
+      },
+      {
+        "path": "Mesh.m",
+        "sha256": "78762f792c316b00aca4a40a8aa79f784350a5bc9a50ccfbf7a79a31ac2a082b"
+      },
+      {
+        "path": "meshsize.m",
+        "sha256": "2744f78fe7c3bc6babb96e7d99a903f84009fdede53510dea66647e12bbfe230"
+      },
+      {
+        "path": "meshstruct.m",
+        "sha256": "74ff440e93f678b18e8161128b10994815295bf9ab9b7ab0f25e5032c256a2fb"
+      },
+      {
+        "path": "Observe.m",
+        "sha256": "a2f0ad4f406f689ed4815d2705a62fd31fff635b6f5b8906ca6ac9b9121f9e3f"
+      },
+      {
+        "path": "pde_experiment_config.m",
+        "sha256": "8d379d1bb02edf844a577d84e5dba6aa84b2387119b572cc8db83e4efb92a097"
+      },
+      {
+        "path": "pde_fit.m",
+        "sha256": "297377cfeedcc008c0062dc7fa3fbbefea6093a2915159cc805ded17a2010e41"
+      },
+      {
+        "path": "pde_legacy_solver.m",
+        "sha256": "3df083605f0451cbc4275225caa36ec4ea8cd66fb1f46219cc1e01c38c0f6b1d"
+      },
+      {
+        "path": "pde_noise.m",
+        "sha256": "518cc2a3f7128ae614698c3b35049b8f64d67e9677da2667f087c00bad1679bc"
+      },
+      {
+        "path": "pde_problem.m",
+        "sha256": "50f1a2e34c834d4751c11a5c396d060832f31f84f776a3be20319aa45fcb5193"
+      },
+      {
+        "path": "run_pde_experiment.m",
+        "sha256": "53d8ce2a23584f3ccf568d4865764c335bf7ace940acd9ec2cda60966782c2ec"
+      },
+      {
+        "path": "Solver_ARk_1.m",
+        "sha256": "89393b43c34be50c1a62f32ab122219e69aca0ce06cf85d3976c602e49d7b2c5"
+      },
+      {
+        "path": "Solver_ARk_2.m",
+        "sha256": "4b932c20afde4077eb021ec4a5b6f6f91f706d8c660e987514c25d064bc3a5b6"
+      },
+      {
+        "path": "Solver_FAR_1.m",
+        "sha256": "0bbd744f2564792d54e804ad74313e1f7e0240f513459bf228544adbffdce2a8"
+      },
+      {
+        "path": "Solver_FAR_2.m",
+        "sha256": "bc97b09c4855bebaf25b59223a5a995be475bda098a133d17c330a5e1db8b5c1"
+      },
+      {
+        "path": "Solver_HBF_1.m",
+        "sha256": "b361ee34e42713231c4692fdf9dde7c0aaa6e44a86de75913e7e2715e09ee58f"
+      },
+      {
+        "path": "Solver_HBF_2.m",
+        "sha256": "39322e565f72d4ca3500b419e589e11c3166540303bf48f345134022b6d196c5"
+      },
+      {
+        "path": "Solver_Landweber_1.m",
+        "sha256": "36397b572e2c88f05a7495220d97a5de65f246bf25dd72ac28f3c11cfe6a54b9"
+      },
+      {
+        "path": "Solver_Nesterov_1.m",
+        "sha256": "fae76f8e9e1fa6b958df8cebcce5c9ef430b4d51068a2ac2f9fe4d49a0c8773c"
+      },
+      {
+        "path": "Solver_Nesterov_2.m",
+        "sha256": "9f90346892e26807a6a5fdcd08f24450d177725a5296c183e4401f6935980002"
+      },
+      {
+        "path": "Solver_Showalter_1.m",
+        "sha256": "6f1c20458bf5445d7d717c43f41acfd114b9c5e8af194f2081c294844878ed05"
+      },
+      {
+        "path": "Solver_SOAR_1.m",
+        "sha256": "22446a2149d8b633d4bb374aa72e3e9fd2d6fc62cbe474dc4c82219fdf345820"
+      },
+      {
+        "path": "Solver_SOAR_2.m",
+        "sha256": "4edc816083a5f5bef0a12b78459a0a12387dd3ff40aec1c6d884e756edb35e23"
+      },
+      {
+        "path": "source_mass_sqrt.m",
+        "sha256": "91355f274e85f26897ba1dbe99f2cfc698ebcf4d33d59be8783d2b1610111c30"
+      },
+      {
+        "path": "Stiff.m",
+        "sha256": "a51b8fc88969cfb0498cb4a0aad6da3bbdc0af037957cacddc3c702149938698"
+      },
+      {
+        "path": "benchmarks/pde_gpu_preflight/pde_fit_batched.m",
+        "sha256": "7390869b2b47df19e0d5da37895ac8202c332d13ed32d1793805ba2031df3530"
+      },
+      {
+        "path": "benchmarks/pde_formal_cpu/pde_formal_replication.m",
+        "sha256": "43a2560c3e10f2a9ba507c13fefde2b03f2790448e2dc20a9aa6a29e10b8130c"
+      },
+      {
+        "path": "benchmarks/pde_coarse_tuning/pde_coarse_check_row.m",
+        "sha256": "d364b3a90f66a992bd65d560da593694461a072d8697f2f38fbe466d0853c208"
+      },
+      {
+        "path": "benchmarks/pde_coarse_tuning/pde_coarse_context.m",
+        "sha256": "48a955793f9efb3aa4cc0c1ec2261e0e033257815f79a88a0d16aa1d658a017d"
+      },
+      {
+        "path": "benchmarks/pde_coarse_tuning/pde_coarse_json.m",
+        "sha256": "7a14f5ba27d8674556e58da5f57d6963f73e1d7f40a149af0c32875c638b42e4"
+      },
+      {
+        "path": "benchmarks/pde_coarse_tuning/pde_coarse_preflight.m",
+        "sha256": "f8bf492cd1155cc1901e207ad99bed9d58944bf096276144e6ab30fa916803f8"
+      },
+      {
+        "path": "benchmarks/pde_coarse_tuning/pde_coarse_worker.m",
+        "sha256": "43d8869217c63ef55d779150eed34b11a4805b27bc55f1456da247a729c9701e"
+      },
+      {
+        "path": "benchmarks/pde_coarse_tuning/run_amax_coarse.py",
+        "sha256": "fbdcfe8b840536d809456774f1e935d4208afe97718c27fd690f1544e02e3ec2"
+      },
+      {
+        "path": "benchmarks/pde_coarse_tuning/remote_coarse_supervisor.py",
+        "sha256": "163435e86c01fe49628d61059cd47cd57982a413dd0b03918e65c6c058bed164"
+      },
+      {
+        "path": "benchmarks/pde_far_formal/pde_far_filter_cache.m",
+        "sha256": "6b62c4840ae95f6fb97327aac526f0fa4638ceff41be2eaff5ab7c66c51c8fdc"
+      },
+      {
+        "path": "benchmarks/pde_far_formal/pde_fit_far_spectral.m",
+        "sha256": "bdc29ff75e6b74490a93efce5f95e2194d65779bbb43e78cb8fccd08cb44fa6e"
+      },
+      {
+        "path": "benchmarks/pde_far_formal/pde_far_replication.m",
+        "sha256": "26efbb5ba61227fa492114922c4897690c48233c27832e5e607e1a12bd474c64"
+      }
+    ],
+    "execution_backend": "cpu-double-batched"
+  }
+}

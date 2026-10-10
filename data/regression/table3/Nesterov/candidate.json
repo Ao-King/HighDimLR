@@ -1,0 +1,90 @@
+{
+  "method": "Nesterov",
+  "settings": {
+    "selection": "TDP",
+    "max_steps": 10000,
+    "step": 2.0574059723851243e-06,
+    "nominal_step": 2.5e-06,
+    "omega": 5.0,
+    "tau": 0.9
+  },
+  "N": 1000,
+  "summary": {
+    "raw_l2_mean": [
+      3.7275329527379437,
+      3.3712121980057685
+    ],
+    "raw_linf_mean": [
+      0.8041849572548059,
+      0.6636861973134606
+    ],
+    "threshold_l2_mean": [
+      2.393701467571538,
+      1.7985947438285013
+    ],
+    "threshold_linf_mean": [
+      0.8041849572548059,
+      0.6636861973134606
+    ],
+    "raw_both_improved": true,
+    "threshold_both_improved": true,
+    "all_error_means_improved": true,
+    "tdp_satisfied_count": 1000,
+    "at_iteration_cap_count": 0,
+    "valid_count": 1000,
+    "steps_mean": 88.177,
+    "steps_range": [
+      83,
+      94
+    ]
+  },
+  "validation": [
+    {
+      "index": 0,
+      "parameter_match": true,
+      "max_estimate_abs_difference": 1.3322676295501878e-15,
+      "threshold_bounds_difference": 0.0,
+      "center_difference": 0.0,
+      "canonical_tdp_satisfied": true
+    },
+    {
+      "index": 17,
+      "parameter_match": true,
+      "max_estimate_abs_difference": 1.1102230246251565e-15,
+      "threshold_bounds_difference": 0.0,
+      "center_difference": 0.0,
+      "canonical_tdp_satisfied": true
+    },
+    {
+      "index": 99,
+      "parameter_match": true,
+      "max_estimate_abs_difference": 1.9984014443252818e-15,
+      "threshold_bounds_difference": 0.0,
+      "center_difference": 0.0,
+      "canonical_tdp_satisfied": true
+    },
+    {
+      "index": 333,
+      "parameter_match": true,
+      "max_estimate_abs_difference": 1.3322676295501878e-15,
+      "threshold_bounds_difference": 0.0,
+      "center_difference": 0.0,
+      "canonical_tdp_satisfied": true
+    },
+    {
+      "index": 999,
+      "parameter_match": true,
+      "max_estimate_abs_difference": 1.5543122344752192e-15,
+      "threshold_bounds_difference": 0.0,
+      "center_difference": 0.0,
+      "canonical_tdp_satisfied": true
+    }
+  ],
+  "trajectory_failure": null,
+  "trajectory_completed_steps": 128,
+  "source_hash": "97d3b45571ab0fadb693b6b7358ab18cdad7ca2e046d4b22a56ceb80e941fefc",
+  "interpretation": "Paired screening on fixed matrix and known truth; no independent validation",
+  "X_hash": "eabdee9dcb96a8312ca7ea0897a56e0a5af8392f7e48eb2e2cdc4a304261e9ef",
+  "X_raw_bytes_sha256": "af4c695fb4b8479ddca605b747d411a1150440296479e2c7265c7fc98b2f3829",
+  "beta_hash": "df04d3a6c1b40f54f76bdfba508758e221b5d3c18bfb0ea4b4f547cf0ed3fbee"
+}

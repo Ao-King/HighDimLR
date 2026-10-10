@@ -1,0 +1,46 @@
+{
+  "X_hash": "eabdee9dcb96a8312ca7ea0897a56e0a5af8392f7e48eb2e2cdc4a304261e9ef",
+  "baseline_summary_sha256": "abf7e092c09be8140032596d1f15a14a525d5f7b33e664a4daa69f9232a48bbd",
+  "beta_hash": "df04d3a6c1b40f54f76bdfba508758e221b5d3c18bfb0ea4b4f547cf0ed3fbee",
+  "config": {
+    "B": 500,
+    "N": 1000,
+    "alpha_grid": [
+      0.0,
+      0.1,
+      200.0
+    ],
+    "backend": "cpu",
+    "blas_threads": 4,
+    "confidence": 0.95,
+    "design_seed": 2026100702,
+    "n": 1000,
+    "noise_pairing": "same outer and bootstrap draws as original matrix 2",
+    "noise_root": 2026100802,
+    "original_fit_reused": true,
+    "p": 1000,
+    "parameter_selection": "ordinary unthresholded oracle L2",
+    "percentiles": [
+      0.0,
+      20.0,
+      50.0
+    ],
+    "sigma": 2.0,
+    "threshold_grid": [
+      0.001,
+      0.001,
+      1.0
+    ]
+  },
+  "created_at": "2026-10-07T16:01:41.342501+00:00",
+  "source_sha256": {
+    "regression_bootstrap.py": "90454adc8493a077f704fbfc6572db474db3a50a5aa7cd007d3eeb603d2f5924",
+    "regression_common.py": "ac2f2077ac0e57559b246e5423097038a3ab494892460e9838ab47e6d0a02cb9",
+    "regression_execution.py": "976b7e1ce2e0616c84e92d156f46dfa704d19626e33cef76a1501b7ff08c2513",
+    "regression_results.py": "a694cf3e8d9d3eaa2ec8ab098bbef06094619256bb802a47141f9ab7510fe30c",
+    "regression_spectral.py": "97d3b45571ab0fadb693b6b7358ab18cdad7ca2e046d4b22a56ceb80e941fefc",
+    "regression_threshold_scan.py": "0dba5764396e08dd638793433d30cbd38e7b88d9c7f2f203d3d16b0329dddcd6",
+    "run_ridge_matrix2_percentiles.py": "63521dac039bcd3413db56a1cfab255ef9f3407c8b92f9b19a37cb64e5a2b1d5"
+  },
+  "version": "ridge-matrix2-percentiles-v1"
+}

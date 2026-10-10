@@ -1,0 +1,290 @@
+{
+  "schema_version": "matrix02-nonsparse-hbf-eta-tdp-v1",
+  "status": "complete",
+  "started_utc": "2026-10-08T12:41:21.268748+00:00",
+  "configuration": {
+    "n": 1000,
+    "p": 1000,
+    "matrix_id": 2,
+    "design_seed": 2026100702,
+    "truth_seed": 25,
+    "noise_seed": 26,
+    "noise": "normal",
+    "noise_sd": 2,
+    "tau": 0.6,
+    "delta": 37.398009755964544,
+    "normalized": false,
+    "single_sample": true,
+    "bootstrap": false,
+    "thresholding": false,
+    "rules": [
+      "TDP"
+    ],
+    "blas_threads": 1
+  },
+  "experiment": "Single-sample HBF damping sensitivity; only eta changes",
+  "data_source": {
+    "file_sha256": "289888a43052da48297c4339adf18b02ba638d891a7eeb409b5d6c9cfd8ffacd",
+    "array_sha256": {
+      "X": "af4c695fb4b8479ddca605b747d411a1150440296479e2c7265c7fc98b2f3829",
+      "Y": "f1ed1f2eece0bef46f96585252692c32d671b0ad77b95470639eb638c19611a9",
+      "beta": "a590aff380bf795ff86d3a81c43e57ef0239a7336e5178be8631ac57ad6bc55f",
+      "e": "e6246a5ac016833a7fe2f6ad747f061797521d8bd03db77ae73c029a9d3c888c",
+      "U": "be5909bff1ffd803685cf1424a3dcec28a083667a427a541f6344801db5517e7",
+      "S": "02de450bb65dee8125c6f6b2e0e59842fa1cbfabef89f50e6dd308bd165d0458",
+      "Vt": "86f9f716d8e14cb116b38a09617369bd8d63d4f77d923b8b5f8d9fb0459486c7"
+    }
+  },
+  "baseline_summary_sha256": "826b27d487777a84be0c83fbfd4304590c1333832818dbc190bf40b517631e5c",
+  "baseline_eta5": {
+    "rule": "TDP",
+    "method": "HBF",
+    "parameter": 2685,
+    "k0": 2685,
+    "diagnostics": {
+      "selection": "TDP",
+      "parameter_kind": "steps",
+      "selected_count": 2685,
+      "first_turn_count": null,
+      "minimum_steps": null,
+      "max_steps": 100000,
+      "recorded_steps": 2685,
+      "trace_columns": [
+        "parameter",
+        "coefficient_l2_error",
+        "residual_norm"
+      ],
+      "trace_includes_trigger_after_selected": false,
+      "at_iteration_cap": false,
+      "residual_norm": 37.13919287408524,
+      "coefficient_l2_error": 7.128922661364929,
+      "stopping_threshold": 37.398009755964544,
+      "tdp_satisfied": true,
+      "boundary_checks": [],
+      "landweber_2k_max_difference": null
+    },
+    "elapsed_seconds": 0.15700000000651926,
+    "ordinary_l2": 7.128922661364929,
+    "ordinary_linf": 0.8856164179619183,
+    "ordinary_residual": 37.13919287408524,
+    "ordinary_sigma": 1.174444399424044,
+    "debiased_l2": 7.452089148024186,
+    "debiased_linf": 0.8332968456527673,
+    "debiased_residual": 6.637532053701801,
+    "debiased_sigma": 0.2098971933207275
+  },
+  "base_settings": {
+    "step": 0.0005,
+    "max_steps": 100000,
+    "eta": 5.0,
+    "selection": "TDP",
+    "tau": 0.6,
+    "delta": 37.398009755964544
+  },
+  "effective_integrator": "rk4",
+  "etas": [
+    10,
+    20,
+    50,
+    100
+  ],
+  "sources": {
+    "sources/run_matrix02_nonsparse_hbf_sensitivity.py": "65390c0fbe57439043e8958a272bba64eaaf97a9426844c1232c955dc823633f",
+    "sources/nonsparse_experiment.py": "d5cc4279173f8c6a9c9dfb9650eb2e23fa26e1cd83ac1c00c6f7f0f748db213c",
+    "sources/regression_spectral.py": "97d3b45571ab0fadb693b6b7358ab18cdad7ca2e046d4b22a56ceb80e941fefc",
+    "sources/run_nonsparse_point_experiment.py": "8598dd28c7cbb8af9f56a2d7ef1eb4645d1dea476b9d662a0358d9b11637828d",
+    "sources/regression_common.py": "ac2f2077ac0e57559b246e5423097038a3ab494892460e9838ab47e6d0a02cb9"
+  },
+  "rows": [
+    {
+      "rule": "TDP",
+      "method": "HBF",
+      "parameter": 1390,
+      "k0": 1390,
+      "diagnostics": {
+        "selection": "TDP",
+        "parameter_kind": "steps",
+        "selected_count": 1390,
+        "first_turn_count": null,
+        "minimum_steps": null,
+        "max_steps": 100000,
+        "recorded_steps": 1390,
+        "trace_columns": [
+          "parameter",
+          "coefficient_l2_error",
+          "residual_norm"
+        ],
+        "trace_includes_trigger_after_selected": false,
+        "at_iteration_cap": false,
+        "residual_norm": 37.23342108922211,
+        "coefficient_l2_error": 7.875024582445966,
+        "stopping_threshold": 37.398009755964544,
+        "tdp_satisfied": true,
+        "boundary_checks": [],
+        "landweber_2k_max_difference": null
+      },
+      "elapsed_seconds": 0.07800000000861473,
+      "ordinary_l2": 7.875024582445966,
+      "ordinary_linf": 0.9180805336736457,
+      "ordinary_residual": 37.23342108922211,
+      "ordinary_sigma": 1.177424157220893,
+      "debiased_l2": 7.227118995300436,
+      "debiased_linf": 0.8727244060865245,
+      "debiased_residual": 12.902781057682065,
+      "debiased_sigma": 0.40802176292751724,
+      "eta": 10,
+      "settings": {
+        "step": 0.0005,
+        "max_steps": 100000,
+        "eta": 10.0,
+        "selection": "TDP",
+        "tau": 0.6,
+        "delta": 37.398009755964544
+      },
+      "debiased_l2_improvement_pct": 8.227346852856321
+    },
+    {
+      "rule": "TDP",
+      "method": "HBF",
+      "parameter": 856,
+      "k0": 856,
+      "diagnostics": {
+        "selection": "TDP",
+        "parameter_kind": "steps",
+        "selected_count": 856,
+        "first_turn_count": null,
+        "minimum_steps": null,
+        "max_steps": 100000,
+        "recorded_steps": 856,
+        "trace_columns": [
+          "parameter",
+          "coefficient_l2_error",
+          "residual_norm"
+        ],
+        "trace_includes_trigger_after_selected": false,
+        "at_iteration_cap": false,
+        "residual_norm": 37.38648118293476,
+        "coefficient_l2_error": 9.317156121761514,
+        "stopping_threshold": 37.398009755964544,
+        "tdp_satisfied": true,
+        "boundary_checks": [],
+        "landweber_2k_max_difference": null
+      },
+      "elapsed_seconds": 0.046999999991385266,
+      "ordinary_l2": 9.317156121761514,
+      "ordinary_linf": 1.0359547807062714,
+      "ordinary_residual": 37.38648118293476,
+      "ordinary_sigma": 1.1822643423710006,
+      "debiased_l2": 8.3379188605253,
+      "debiased_linf": 0.9087394658399655,
+      "debiased_residual": 22.76824901262972,
+      "debiased_sigma": 0.7199952521378973,
+      "eta": 20,
+      "settings": {
+        "step": 0.0005,
+        "max_steps": 100000,
+        "eta": 20.0,
+        "selection": "TDP",
+        "tau": 0.6,
+        "delta": 37.398009755964544
+      },
+      "debiased_l2_improvement_pct": 10.510044571959776
+    },
+    {
+      "rule": "TDP",
+      "method": "HBF",
+      "parameter": 1882,
+      "k0": 1882,
+      "diagnostics": {
+        "selection": "TDP",
+        "parameter_kind": "steps",
+        "selected_count": 1882,
+        "first_turn_count": null,
+        "minimum_steps": null,
+        "max_steps": 100000,
+        "recorded_steps": 1882,
+        "trace_columns": [
+          "parameter",
+          "coefficient_l2_error",
+          "residual_norm"
+        ],
+        "trace_includes_trigger_after_selected": false,
+        "at_iteration_cap": false,
+        "residual_norm": 37.38799311219349,
+        "coefficient_l2_error": 9.479199900076015,
+        "stopping_threshold": 37.398009755964544,
+        "tdp_satisfied": true,
+        "boundary_checks": [],
+        "landweber_2k_max_difference": null
+      },
+      "elapsed_seconds": 0.10899999999674037,
+      "ordinary_l2": 9.479199900076015,
+      "ordinary_linf": 1.0346747667842515,
+      "ordinary_residual": 37.38799311219349,
+      "ordinary_sigma": 1.1823121537721872,
+      "debiased_l2": 8.394672879965071,
+      "debiased_linf": 0.924164453113021,
+      "debiased_residual": 23.906461864227758,
+      "debiased_sigma": 0.7559887028691474,
+      "eta": 50,
+      "settings": {
+        "step": 0.0005,
+        "max_steps": 100000,
+        "eta": 50.0,
+        "selection": "TDP",
+        "tau": 0.6,
+        "delta": 37.398009755964544
+      },
+      "debiased_l2_improvement_pct": 11.441124056285034
+    },
+    {
+      "rule": "TDP",
+      "method": "HBF",
+      "parameter": 3774,
+      "k0": 3774,
+      "diagnostics": {
+        "selection": "TDP",
+        "parameter_kind": "steps",
+        "selected_count": 3774,
+        "first_turn_count": null,
+        "minimum_steps": null,
+        "max_steps": 100000,
+        "recorded_steps": 3774,
+        "trace_columns": [
+          "parameter",
+          "coefficient_l2_error",
+          "residual_norm"
+        ],
+        "trace_includes_trigger_after_selected": false,
+        "at_iteration_cap": false,
+        "residual_norm": 37.394757773569125,
+        "coefficient_l2_error": 9.465113590497916,
+        "stopping_threshold": 37.398009755964544,
+        "tdp_satisfied": true,
+        "boundary_checks": [],
+        "landweber_2k_max_difference": null
+      },
+      "elapsed_seconds": 0.21900000001187436,
+      "ordinary_l2": 9.465113590497916,
+      "ordinary_linf": 1.0331063479077458,
+      "ordinary_residual": 37.394757773569125,
+      "ordinary_sigma": 1.1825260711476548,
+      "debiased_l2": 8.375397491520864,
+      "debiased_linf": 0.9229203384753544,
+      "debiased_residual": 23.78220477126409,
+      "debiased_sigma": 0.7520593485771828,
+      "eta": 100,
+      "settings": {
+        "step": 0.0005,
+        "max_steps": 100000,
+        "eta": 100.0,
+        "selection": "TDP",
+        "tau": 0.6,
+        "delta": 37.398009755964544
+      },
+      "debiased_l2_improvement_pct": 11.51297434054066
+    }
+  ],
+  "completed_utc": "2026-10-08T12:41:21.882520+00:00",
+  "numerical_audit": "pending"
+}

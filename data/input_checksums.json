@@ -1,0 +1,274 @@
+{
+  "files": [
+    {
+      "path": "data/pde/problem.mat",
+      "sha256": "142f4f4c8afe1d3e1e25651ba2f55883b10abc11eb057167f2c7181bb127c89f",
+      "bytes": 8008177
+    },
+    {
+      "path": "data/regression/caseI/data.npz",
+      "sha256": "83a571d0162e5a5e07cb812e02fb3d91ca703f2f8a9d3cdc7d4ab074126e9673",
+      "bytes": 7714629
+    },
+    {
+      "path": "data/regression/caseI/point/laplace_ark.npz",
+      "sha256": "da08a5af5d2a813931beb3a8caf03d3d77718ced6444f7cd0f137a53e3b93829",
+      "bytes": 82300
+    },
+    {
+      "path": "data/regression/caseI/point/laplace_far.npz",
+      "sha256": "a600d6e5134cb9913a7603ad10c597ede4b4269a443a95374d4cf96f7d97b55c",
+      "bytes": 82300
+    },
+    {
+      "path": "data/regression/caseI/point/laplace_hbf.npz",
+      "sha256": "5eeaef0dee2977a8d91aa18bee511675d76c84a474c9e8fbcaae8c4c2f49334c",
+      "bytes": 82300
+    },
+    {
+      "path": "data/regression/caseI/point/laplace_landweber.npz",
+      "sha256": "d583e6c6ce8a9c83c85cf7aae2ce06891d1b6066bdf343d6962019a2b53c4854",
+      "bytes": 82300
+    },
+    {
+      "path": "data/regression/caseI/point/laplace_lasso.npz",
+      "sha256": "c02e39d4de3ab66649ffabd26881cc25cf1bb945c09698eea10cb25c7b95b18e",
+      "bytes": 66288
+    },
+    {
+      "path": "data/regression/caseI/point/laplace_ls.npz",
+      "sha256": "9c617207ea053c2129e7ebf7944e3762b1d9ab06a060dbb5ecd510adc7c82a6d",
+      "bytes": 66288
+    },
+    {
+      "path": "data/regression/caseI/point/laplace_nesterov.npz",
+      "sha256": "95a67fde252d2f623c3b4f10162e5e95ff21dc399a7e6300098e437ae0b293bf",
+      "bytes": 82300
+    },
+    {
+      "path": "data/regression/caseI/point/laplace_ridge.npz",
+      "sha256": "918f5dc50ffded106242085661249d5c8fcc01664260224b36ef1be933d66dc0",
+      "bytes": 82304
+    },
+    {
+      "path": "data/regression/caseI/point/laplace_sc.npz",
+      "sha256": "c546bce09b7eb44a3a049428f862550b3008fc0ae0428e2556cf828edae26276",
+      "bytes": 82300
+    },
+    {
+      "path": "data/regression/caseI/point/laplace_showalter.npz",
+      "sha256": "1df35631d1b4f15608be9e37c3a0569e3b4019418dcb0e7ee73fe23c0f6b9413",
+      "bytes": 82300
+    },
+    {
+      "path": "data/regression/caseI/point/laplace_soar.npz",
+      "sha256": "b025701471b2cac915b0882bfd3295f49a27a9154ea1eabbd40706fec19f898d",
+      "bytes": 82300
+    },
+    {
+      "path": "data/regression/caseI/point/normal_ark.npz",
+      "sha256": "e982bbd17d8b25a3926fc5264624734e748e9d66ab437c862a4274a305e905e0",
+      "bytes": 82300
+    },
+    {
+      "path": "data/regression/caseI/point/normal_far.npz",
+      "sha256": "bcc51fbb1b60b57752b35a7827e78d13983a23c1c6dffbb1f0ddf0c5660a69b0",
+      "bytes": 82300
+    },
+    {
+      "path": "data/regression/caseI/point/normal_hbf.npz",
+      "sha256": "c82236944e0cedbe0b9b81c0c47d3cab7adbdad2837938beb9831e869a090641",
+      "bytes": 82300
+    },
+    {
+      "path": "data/regression/caseI/point/normal_landweber.npz",
+      "sha256": "78df3d519046b5d9f1505b9f20abbf6e3f162b83b4017ecb669eeafa44bdd28d",
+      "bytes": 82300
+    },
+    {
+      "path": "data/regression/caseI/point/normal_lasso.npz",
+      "sha256": "96c80aa9f7296f8ffb7a88ed4973cdb8ac0170ba587d7c1bed67c5e581c3faf8",
+      "bytes": 66288
+    },
+    {
+      "path": "data/regression/caseI/point/normal_ls.npz",
+      "sha256": "b1f1c9b29bfce2d91af73858edeed0f9759828421a5406498a1cf7b98e5f4107",
+      "bytes": 66288
+    },
+    {
+      "path": "data/regression/caseI/point/normal_nesterov.npz",
+      "sha256": "42b3fe226954066f6bac3769d7d4c4a50c5afc50fe7d0ad8932511e99c163b5c",
+      "bytes": 82300
+    },
+    {
+      "path": "data/regression/caseI/point/normal_ridge.npz",
+      "sha256": "ad3c4b80d8bf97d789900e8674a3a4d1cf0f43b1844426a8a0eefacd94c858d3",
+      "bytes": 82304
+    },
+    {
+      "path": "data/regression/caseI/point/normal_sc.npz",
+      "sha256": "6830969c445a016c3c343a5e305cee45b0d36e76c1597a4de7b95cd68c31ebac",
+      "bytes": 82300
+    },
+    {
+      "path": "data/regression/caseI/point/normal_showalter.npz",
+      "sha256": "8c2fd55e77a879d34af7e981558b9403513bbc6d5d4a50d0004487becc45f86e",
+      "bytes": 82300
+    },
+    {
+      "path": "data/regression/caseI/point/normal_soar.npz",
+      "sha256": "212cca7d1d2519c7673459bda242e6bd93b04fc55397afc4dfd6edd1d5e724c4",
+      "bytes": 82300
+    },
+    {
+      "path": "data/regression/caseII/data.npz",
+      "sha256": "27759504b2a88edd2f2fd5bc0ce6477442efb153e63e11a6cef56b80253df5af",
+      "bytes": 12012496
+    },
+    {
+      "path": "data/regression/caseII/point/laplace_ark.npz",
+      "sha256": "60403c9597d80fdd649e35caed85791da2d26665dce9f13a8f781a0f4c2c1712",
+      "bytes": 102300
+    },
+    {
+      "path": "data/regression/caseII/point/laplace_far.npz",
+      "sha256": "4f222be1e4827128412edba76b12d423d3b6492d01598dafdc82548bed054588",
+      "bytes": 102300
+    },
+    {
+      "path": "data/regression/caseII/point/laplace_hbf.npz",
+      "sha256": "05c9b9565db6292237fbf495c62f69c1fc7808fcad12dc58b8d1ca563ab0227d",
+      "bytes": 102300
+    },
+    {
+      "path": "data/regression/caseII/point/laplace_landweber.npz",
+      "sha256": "8b65e0cec8d8d74accb4c54fa1aecf33e2c82d240f3485055086b023e087c805",
+      "bytes": 102300
+    },
+    {
+      "path": "data/regression/caseII/point/laplace_lasso.npz",
+      "sha256": "fc7dd343718ba1d45d739bfa82ba4a6e7fb95fc792f5f3d77f3c781950062382",
+      "bytes": 78288
+    },
+    {
+      "path": "data/regression/caseII/point/laplace_ls.npz",
+      "sha256": "8aa0f11fd93faba30630b00d5211561f9144ce0d5b08cc534f65e6c24f2909a0",
+      "bytes": 78288
+    },
+    {
+      "path": "data/regression/caseII/point/laplace_nesterov.npz",
+      "sha256": "e5c314efa4a7af25b6bac4866cc5e1cfc0466af7d15d7197bcccde0f8b896410",
+      "bytes": 102300
+    },
+    {
+      "path": "data/regression/caseII/point/laplace_ridge.npz",
+      "sha256": "31ebfddce69aabee34f618b4b5d6cecaa577ef021422ec3fb7ab972a9db85906",
+      "bytes": 102304
+    },
+    {
+      "path": "data/regression/caseII/point/laplace_sc.npz",
+      "sha256": "24b7d3c7472f9ad5e5e8dd13fd2d5877cded5653a3d7bd278e895ea9992537f1",
+      "bytes": 102300
+    },
+    {
+      "path": "data/regression/caseII/point/laplace_showalter.npz",
+      "sha256": "0fb54697f26f58ea49e1e8ddca14c6e27199b855c12b5f2524cb67ae41375cba",
+      "bytes": 102300
+    },
+    {
+      "path": "data/regression/caseII/point/laplace_soar.npz",
+      "sha256": "6f60becdae09a1d86fded597e7f491df20e45c1dc68d049b78f9db652a9831d9",
+      "bytes": 102300
+    },
+    {
+      "path": "data/regression/caseII/point/normal_ark.npz",
+      "sha256": "58925cb0f34cfe180ad4bdfd193a55b283eb6fe79539e58c5748bcbb861ef26e",
+      "bytes": 102300
+    },
+    {
+      "path": "data/regression/caseII/point/normal_far.npz",
+      "sha256": "e753645bb7e3fb571ab3dd551b59997556680dcb729b34ce47a0eb67180691a2",
+      "bytes": 102300
+    },
+    {
+      "path": "data/regression/caseII/point/normal_hbf.npz",
+      "sha256": "6c0d8de4156164fbfb33388be1962b3350077b1368d35e8e4d0f29599a4026ee",
+      "bytes": 102300
+    },
+    {
+      "path": "data/regression/caseII/point/normal_landweber.npz",
+      "sha256": "1f567601a8d463d1b9679b6765532d5c6fdebca1a4a0bf2d8d1da7cb6cf9338c",
+      "bytes": 102300
+    },
+    {
+      "path": "data/regression/caseII/point/normal_lasso.npz",
+      "sha256": "6e88f4f5550617aec203a7a051ce4d44032fa882a4d8984e238ad72e0b6a7db5",
+      "bytes": 78288
+    },
+    {
+      "path": "data/regression/caseII/point/normal_ls.npz",
+      "sha256": "1d70d43b639a7c6164c5f47b4642425842470b39d150ba7fb990891ba9450172",
+      "bytes": 78288
+    },
+    {
+      "path": "data/regression/caseII/point/normal_nesterov.npz",
+      "sha256": "b19c9827848410974d2969db35cc03aaa088f29719918ea8afcf5ab25abdf477",
+      "bytes": 102300
+    },
+    {
+      "path": "data/regression/caseII/point/normal_ridge.npz",
+      "sha256": "4be0ae0c1ba1e04b5c973cac7e0297fe41edaf3a3b4d8a850b6bea9d0618f964",
+      "bytes": 102304
+    },
+    {
+      "path": "data/regression/caseII/point/normal_sc.npz",
+      "sha256": "a5148144b27f839b62d3823a7281ee70e3046f2c9c4551ac37500fea3b6c8de2",
+      "bytes": 102300
+    },
+    {
+      "path": "data/regression/caseII/point/normal_showalter.npz",
+      "sha256": "355dec4abaf0d357839c56f7d97844a5126d4a93bb5d3cddb8dc6f855d27de7c",
+      "bytes": 102300
+    },
+    {
+      "path": "data/regression/caseII/point/normal_soar.npz",
+      "sha256": "e77b35b9e835c5a67d9c367cb8cb9447527a1aa8e069de702a3c9acbb0989523",
+      "bytes": 102300
+    },
+    {
+      "path": "data/regression/caseI/svd.npz",
+      "sha256": "409a551003d204c3c947d252f91c671f105cc3b507194401ee644418c56e2147",
+      "bytes": 16008726
+    },
+    {
+      "path": "data/regression/caseII/svd.npz",
+      "sha256": "38043ab564140c99b665845f4553c62349eeb8e097b1f29549976b19943c1c0e",
+      "bytes": 20008726
+    },
+    {
+      "path": "data/regression/nonsparse/data.npz",
+      "sha256": "289888a43052da48297c4339adf18b02ba638d891a7eeb409b5d6c9cfd8ffacd",
+      "bytes": 23074564
+    },
+    {
+      "path": "data/regression/nonsparse/estimates.npz",
+      "sha256": "8bb71b9ad4a5630b209307b976016e83ff1f7de1f2bc45319b52806bb4021eea",
+      "bytes": 157978
+    },
+    {
+      "path": "data/regression/nonsparse/traces.npz",
+      "sha256": "0d518d82d59755468232b699301223347a1d118cb1217e6477ce5b4dae341b96",
+      "bytes": 434825
+    },
+    {
+      "path": "data/regression/nonsparse/hbf_eta10/estimates.npz",
+      "sha256": "f3bb564de2e8c909f9e785ae80f19283bcae860a562d02182389a97266a23d5d",
+      "bytes": 63211
+    },
+    {
+      "path": "data/regression/nonsparse/hbf_eta10/traces.npz",
+      "sha256": "c34ceee2c59142d6ab5673d1a07c9fe7bed2896b5853206e3a98a9a9ad01c7f4",
+      "bytes": 136152
+    }
+  ]
+}

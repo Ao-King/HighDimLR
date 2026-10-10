@@ -1,0 +1,55 @@
+{
+  "verified_date": "2026-10-10",
+  "host_alias": "AMAX",
+  "operating_system": "Ubuntu 20.04.6 LTS",
+  "cpu": {
+    "Architecture": "x86_64",
+    "CPU(s)": "128",
+    "Thread(s) per core": "2",
+    "Core(s) per socket": "32",
+    "Socket(s)": "2",
+    "Model name": "Intel(R) Xeon(R) Platinum 8358P CPU @ 2.60GHz",
+    "CPU max MHz": "3400.0000"
+  },
+  "memory_bytes": 540639653888,
+  "gpu_configuration": [
+    "NVIDIA GeForce RTX 4090, 24564 MiB, 560.35.03",
+    "NVIDIA GeForce RTX 4090, 24564 MiB, 560.35.03"
+  ],
+  "matlab": "R2025a",
+  "formal_pde_backend": "cpu-double-batched",
+  "system_orchestration_python": "3.8.10",
+  "scientific_environments": [
+    {
+      "role": "scientific_cpu",
+      "python": "3.12.2",
+      "packages": {
+        "numpy": "1.26.4",
+        "scipy": "1.14.1",
+        "scikit-learn": "1.4.2",
+        "matplotlib": "3.8.4",
+        "numba": "0.59.1",
+        "threadpoolctl": "2.2.0"
+      }
+    },
+    {
+      "role": "optional_gpu",
+      "python": "3.12.2",
+      "packages": {
+        "numpy": "1.26.4",
+        "scipy": "1.14.1",
+        "scikit-learn": "1.4.2",
+        "matplotlib": "3.8.4",
+        "numba": "0.59.1",
+        "cupy-cuda12x": "13.6.0",
+        "threadpoolctl": "2.2.0"
+      }
+    }
+  ],
+  "archived_nonsparse_python_packages": {
+    "numpy": "1.26.4",
+    "scipy": "1.13.1",
+    "scikit-learn": "1.5.1",
+    "threadpoolctl": "3.5.0"
+  }
+}

@@ -1,0 +1,578 @@
+{
+  "schema_version": "matrix02-nonsparse-tdp-v1",
+  "status": "complete",
+  "started_utc": "2026-10-08T12:08:27.059625+00:00",
+  "configuration": {
+    "n": 1000,
+    "p": 1000,
+    "matrix_id": 2,
+    "design_seed": 2026100702,
+    "truth_seed": 25,
+    "noise_seed": 26,
+    "noise": "normal",
+    "noise_sd": 2,
+    "tau": 0.6,
+    "delta": 37.398009755964544,
+    "normalized": false,
+    "single_sample": true,
+    "bootstrap": false,
+    "thresholding": false,
+    "rules": [
+      "TDP"
+    ],
+    "blas_threads": 1
+  },
+  "design_source": {
+    "file_sha256": "83a571d0162e5a5e07cb812e02fb3d91ca703f2f8a9d3cdc7d4ab074126e9673",
+    "X_raw_array_sha256": "af4c695fb4b8479ddca605b747d411a1150440296479e2c7265c7fc98b2f3829"
+  },
+  "data": {
+    "array_sha256": {
+      "X": "af4c695fb4b8479ddca605b747d411a1150440296479e2c7265c7fc98b2f3829",
+      "Y": "f1ed1f2eece0bef46f96585252692c32d671b0ad77b95470639eb638c19611a9",
+      "beta": "a590aff380bf795ff86d3a81c43e57ef0239a7336e5178be8631ac57ad6bc55f",
+      "e": "e6246a5ac016833a7fe2f6ad747f061797521d8bd03db77ae73c029a9d3c888c",
+      "U": "be5909bff1ffd803685cf1424a3dcec28a083667a427a541f6344801db5517e7",
+      "S": "02de450bb65dee8125c6f6b2e0e59842fa1cbfabef89f50e6dd308bd165d0458",
+      "Vt": "86f9f716d8e14cb116b38a09617369bd8d63d4f77d923b8b5f8d9fb0459486c7"
+    },
+    "noise_norm": 62.330016259940905,
+    "truth_norm": 36.241021535815776,
+    "lambda_max": 481188.45443629473,
+    "condition_number": 60076.68348887785
+  },
+  "sources": {
+    "sources/run_matrix02_nonsparse.py": "98eae63518b4be59d0108f36501180ea95cc87c88d387846f69c660cb0fde7ea",
+    "sources/nonsparse_experiment.py": "d5cc4279173f8c6a9c9dfb9650eb2e23fa26e1cd83ac1c00c6f7f0f748db213c",
+    "sources/regression_spectral.py": "97d3b45571ab0fadb693b6b7358ab18cdad7ca2e046d4b22a56ceb80e941fefc",
+    "sources/regression_common.py": "ac2f2077ac0e57559b246e5423097038a3ab494892460e9838ab47e6d0a02cb9",
+    "sources/run_nonsparse_point_experiment.py": "8598dd28c7cbb8af9f56a2d7ef1eb4645d1dea476b9d662a0358d9b11637828d"
+  },
+  "settings": {
+    "LS": {
+      "selection": "minimum_norm",
+      "rcond": null
+    },
+    "SC": {
+      "selection": "oracle_rank",
+      "rank_max": 1000,
+      "selection_exception": "oracle_rank_reference"
+    },
+    "Lasso": {
+      "selection": "discrepancy_grid",
+      "C": 1000,
+      "m": 1,
+      "alpha_divisor": 1000,
+      "fit_intercept": false,
+      "tau": 0.6,
+      "delta": 37.398009755964544
+    },
+    "Ridge": {
+      "selection": "discrepancy_grid",
+      "C": 50000,
+      "m": 10,
+      "alpha_divisor": 1000,
+      "tau": 0.6,
+      "delta": 37.398009755964544
+    },
+    "Landweber": {
+      "step": 3e-06,
+      "max_steps": 100000,
+      "selection": "TDP",
+      "tau": 0.6,
+      "delta": 37.398009755964544
+    },
+    "Showalter": {
+      "step": 3e-06,
+      "max_steps": 100000,
+      "selection": "TDP",
+      "tau": 0.6,
+      "delta": 37.398009755964544
+    },
+    "HBF": {
+      "step": 0.0005,
+      "max_steps": 100000,
+      "eta": 5.0,
+      "selection": "TDP",
+      "tau": 0.6,
+      "delta": 37.398009755964544
+    },
+    "ARk": {
+      "step": 5e-05,
+      "max_steps": 2000,
+      "kappa": 0.5,
+      "selection": "TDP",
+      "tau": 0.6,
+      "delta": 37.398009755964544
+    },
+    "SOAR": {
+      "step": 0.0005,
+      "max_steps": 100000,
+      "s_star": 0.5,
+      "selection": "TDP",
+      "tau": 0.6,
+      "delta": 37.398009755964544
+    },
+    "Nesterov": {
+      "step": 2.0574059723851243e-06,
+      "nominal_step": 3e-06,
+      "max_steps": 100000,
+      "omega": 3,
+      "selection": "TDP",
+      "tau": 0.6,
+      "delta": 37.398009755964544
+    },
+    "FAR": {
+      "step": 0.0005,
+      "max_steps": 2000,
+      "theta": 1.8,
+      "selection": "TDP",
+      "tau": 0.6,
+      "delta": 37.398009755964544
+    }
+  },
+  "rows": [
+    {
+      "rule": "TDP",
+      "method": "LS",
+      "parameter": null,
+      "k0": null,
+      "diagnostics": {
+        "selection": "minimum_norm",
+        "at_iteration_cap": false,
+        "tdp_satisfied": null
+      },
+      "elapsed_seconds": 0.15599999998812564,
+      "ordinary_l2": 103.39358399474683,
+      "ordinary_linf": 9.801506805606115,
+      "ordinary_residual": 1.1131750336642476e-11,
+      "ordinary_sigma": 3.520168540813634e-13,
+      "debiased_l2": null,
+      "debiased_linf": null,
+      "debiased_residual": null,
+      "debiased_sigma": null
+    },
+    {
+      "rule": "TDP",
+      "method": "SC",
+      "parameter": 973,
+      "k0": null,
+      "diagnostics": {
+        "selection": "oracle_rank",
+        "comparison_rule": "TDP",
+        "parameter_kind": "rank",
+        "selected_count": 973,
+        "selected_grid_numerator": null,
+        "selected_trace_index": 27,
+        "recorded_candidates": 1000,
+        "trace_columns": [
+          "parameter",
+          "coefficient_l2_error",
+          "residual_norm"
+        ],
+        "residual_norm": 10.899729408061601,
+        "coefficient_l2_error": 7.577108301303282,
+        "stopping_threshold": null,
+        "tdp_satisfied": null,
+        "selection_exception": "oracle_rank_reference",
+        "boundary_checks": []
+      },
+      "elapsed_seconds": 0.031000000017229468,
+      "ordinary_l2": 7.577108301303282,
+      "ordinary_linf": 0.887776839209451,
+      "ordinary_residual": 10.899729408061601,
+      "ordinary_sigma": 0.34467970808993514,
+      "debiased_l2": 7.577108301303282,
+      "debiased_linf": 0.887776839209451,
+      "debiased_residual": 10.899729408061601,
+      "debiased_sigma": 0.34467970808993514
+    },
+    {
+      "rule": "TDP",
+      "method": "Lasso",
+      "parameter": 0.018,
+      "k0": null,
+      "diagnostics": {
+        "selection": "discrepancy_grid",
+        "fit_intercept": false,
+        "parameter_kind": "alpha",
+        "selected_alpha": 0.018,
+        "selected_grid_numerator": 18,
+        "selected_trace_index": 982,
+        "recorded_candidates": 983,
+        "trace_columns": [
+          "alpha",
+          "coefficient_l2_error",
+          "residual_norm"
+        ],
+        "descending_grid": {
+          "start": 1.0,
+          "stop": 0.0,
+          "step": -0.001
+        },
+        "tdp_satisfied": true,
+        "stopping_threshold": 37.398009755964544,
+        "residual_norm": 36.131500107416045,
+        "coefficient_l2_error": 10.169904171375462,
+        "previous_candidate_alpha": 0.019,
+        "previous_candidate_residual": 37.57179503329511,
+        "all_examined_candidates_converged": true,
+        "selection_rule_uses_truth": false,
+        "solver": "sklearn Lasso cyclic coordinate descent",
+        "sklearn_version": "1.5.1",
+        "convergence_tolerance": 1e-06,
+        "allowed_dual_gap": 0.002302735339589183,
+        "dual_gap": 1.8627360987011343e-10,
+        "direct_dual_gap": 1.7848833522293717e-10,
+        "max_dual_gap": 2.7846908778883517e-10,
+        "iterations": 1,
+        "total_iterations": 983,
+        "max_iterations": 1,
+        "kkt_active_max_error": 2.1964721708123136e-13,
+        "kkt_inactive_max_violation": 0.0,
+        "initialization": "LARS path interpolation; every examined point validated by converged cyclic CD",
+        "initialization_path_knots": 1255,
+        "initialization_path_warnings": [],
+        "initialization_max_coefficient_norm_change": 2.9004428806415517e-12,
+        "blas_threads": 1,
+        "boundary_checks": [
+          {
+            "check": "previous_candidate_rejects_tdp",
+            "passed": true
+          },
+          {
+            "check": "all_prior_candidates_reject_tdp",
+            "passed": true
+          },
+          {
+            "check": "selected_candidate_satisfies_tdp",
+            "passed": true
+          },
+          {
+            "check": "direct_dual_gap_within_tolerance",
+            "passed": true
+          },
+          {
+            "check": "immutable_data_hash",
+            "passed": true
+          }
+        ]
+      },
+      "elapsed_seconds": 6.5709676000115,
+      "ordinary_l2": 10.169904171375462,
+      "ordinary_linf": 1.0207445052124675,
+      "ordinary_residual": 36.131500107416045,
+      "ordinary_sigma": 1.1425783561805316,
+      "debiased_l2": null,
+      "debiased_linf": null,
+      "debiased_residual": null,
+      "debiased_sigma": null
+    },
+    {
+      "rule": "TDP",
+      "method": "Ridge",
+      "parameter": 19.8,
+      "k0": null,
+      "diagnostics": {
+        "selection": "discrepancy_grid",
+        "comparison_rule": "TDP",
+        "parameter_kind": "alpha",
+        "selected_count": null,
+        "selected_grid_numerator": 19800,
+        "selected_trace_index": 3020,
+        "recorded_candidates": 5001,
+        "trace_columns": [
+          "parameter",
+          "coefficient_l2_error",
+          "residual_norm"
+        ],
+        "residual_norm": 37.3868675272754,
+        "coefficient_l2_error": 8.50800662253608,
+        "stopping_threshold": 37.398009755964544,
+        "tdp_satisfied": true,
+        "selection_exception": null,
+        "boundary_checks": []
+      },
+      "elapsed_seconds": 0.139999999984866,
+      "ordinary_l2": 8.50800662253608,
+      "ordinary_linf": 0.9750469555481,
+      "ordinary_residual": 37.3868675272754,
+      "ordinary_sigma": 1.1822765596517761,
+      "debiased_l2": 7.415204688582388,
+      "debiased_linf": 0.8408536759539766,
+      "debiased_residual": 16.807186364525325,
+      "debiased_sigma": 0.5314898997082503
+    },
+    {
+      "rule": "TDP",
+      "method": "Landweber",
+      "parameter": 6296,
+      "k0": 6296,
+      "diagnostics": {
+        "selection": "TDP",
+        "parameter_kind": "steps",
+        "selected_count": 6296,
+        "first_turn_count": null,
+        "minimum_steps": null,
+        "max_steps": 100000,
+        "recorded_steps": 6296,
+        "trace_columns": [
+          "parameter",
+          "coefficient_l2_error",
+          "residual_norm"
+        ],
+        "trace_includes_trigger_after_selected": false,
+        "at_iteration_cap": false,
+        "residual_norm": 37.39439738561764,
+        "coefficient_l2_error": 9.46031601806267,
+        "stopping_threshold": 37.398009755964544,
+        "tdp_satisfied": true,
+        "boundary_checks": [],
+        "landweber_2k_max_difference": 4.107825191113079e-14
+      },
+      "elapsed_seconds": 0.3120000000053551,
+      "ordinary_l2": 9.46031601806267,
+      "ordinary_linf": 1.032608946810678,
+      "ordinary_residual": 37.39439738561764,
+      "ordinary_sigma": 1.182514674679975,
+      "debiased_l2": 8.368983351106053,
+      "debiased_linf": 0.9224992043480551,
+      "debiased_residual": 23.74042163663881,
+      "debiased_sigma": 0.7507380498452094
+    },
+    {
+      "rule": "TDP",
+      "method": "Showalter",
+      "parameter": 6296,
+      "k0": 6296,
+      "diagnostics": {
+        "selection": "TDP",
+        "parameter_kind": "steps",
+        "selected_count": 6296,
+        "first_turn_count": null,
+        "minimum_steps": null,
+        "max_steps": 100000,
+        "recorded_steps": 6296,
+        "trace_columns": [
+          "parameter",
+          "coefficient_l2_error",
+          "residual_norm"
+        ],
+        "trace_includes_trigger_after_selected": false,
+        "at_iteration_cap": false,
+        "residual_norm": 37.39683763010829,
+        "coefficient_l2_error": 9.46042440706292,
+        "stopping_threshold": 37.398009755964544,
+        "tdp_satisfied": true,
+        "boundary_checks": [],
+        "landweber_2k_max_difference": null
+      },
+      "elapsed_seconds": 0.25,
+      "ordinary_l2": 9.46042440706292,
+      "ordinary_linf": 1.0326154978904638,
+      "ordinary_residual": 37.39683763010829,
+      "ordinary_sigma": 1.1825918419863564,
+      "debiased_l2": 8.369008490924596,
+      "debiased_linf": 0.9225076491735605,
+      "debiased_residual": 23.74114574950998,
+      "debiased_sigma": 0.7507609483047688
+    },
+    {
+      "rule": "TDP",
+      "method": "HBF",
+      "parameter": 2685,
+      "k0": 2685,
+      "diagnostics": {
+        "selection": "TDP",
+        "parameter_kind": "steps",
+        "selected_count": 2685,
+        "first_turn_count": null,
+        "minimum_steps": null,
+        "max_steps": 100000,
+        "recorded_steps": 2685,
+        "trace_columns": [
+          "parameter",
+          "coefficient_l2_error",
+          "residual_norm"
+        ],
+        "trace_includes_trigger_after_selected": false,
+        "at_iteration_cap": false,
+        "residual_norm": 37.13919287408524,
+        "coefficient_l2_error": 7.128922661364929,
+        "stopping_threshold": 37.398009755964544,
+        "tdp_satisfied": true,
+        "boundary_checks": [],
+        "landweber_2k_max_difference": null
+      },
+      "elapsed_seconds": 0.15700000000651926,
+      "ordinary_l2": 7.128922661364929,
+      "ordinary_linf": 0.8856164179619183,
+      "ordinary_residual": 37.13919287408524,
+      "ordinary_sigma": 1.174444399424044,
+      "debiased_l2": 7.452089148024186,
+      "debiased_linf": 0.8332968456527673,
+      "debiased_residual": 6.637532053701801,
+      "debiased_sigma": 0.2098971933207275
+    },
+    {
+      "rule": "TDP",
+      "method": "ARk",
+      "parameter": 552,
+      "k0": 552,
+      "diagnostics": {
+        "selection": "TDP",
+        "parameter_kind": "steps",
+        "selected_count": 552,
+        "first_turn_count": null,
+        "minimum_steps": null,
+        "max_steps": 2000,
+        "recorded_steps": 552,
+        "trace_columns": [
+          "parameter",
+          "coefficient_l2_error",
+          "residual_norm"
+        ],
+        "trace_includes_trigger_after_selected": false,
+        "at_iteration_cap": false,
+        "residual_norm": 37.36986420001023,
+        "coefficient_l2_error": 9.450276728217686,
+        "stopping_threshold": 37.398009755964544,
+        "tdp_satisfied": true,
+        "boundary_checks": [],
+        "landweber_2k_max_difference": null
+      },
+      "elapsed_seconds": 0.030999999988125637,
+      "ordinary_l2": 9.450276728217686,
+      "ordinary_linf": 1.0283729990516,
+      "ordinary_residual": 37.36986420001023,
+      "ordinary_sigma": 1.1817388672321842,
+      "debiased_l2": 8.421506464847772,
+      "debiased_linf": 0.9158765423816436,
+      "debiased_residual": 23.46511165475346,
+      "debiased_sigma": 0.7420319837918354
+    },
+    {
+      "rule": "TDP",
+      "method": "SOAR",
+      "parameter": 1218,
+      "k0": 1218,
+      "diagnostics": {
+        "selection": "TDP",
+        "parameter_kind": "steps",
+        "selected_count": 1218,
+        "first_turn_count": null,
+        "minimum_steps": null,
+        "max_steps": 100000,
+        "recorded_steps": 1218,
+        "trace_columns": [
+          "parameter",
+          "coefficient_l2_error",
+          "residual_norm"
+        ],
+        "trace_includes_trigger_after_selected": false,
+        "at_iteration_cap": false,
+        "residual_norm": 37.34964120306527,
+        "coefficient_l2_error": 8.26707674748576,
+        "stopping_threshold": 37.398009755964544,
+        "tdp_satisfied": true,
+        "boundary_checks": [],
+        "landweber_2k_max_difference": null
+      },
+      "elapsed_seconds": 0.046999999991385266,
+      "ordinary_l2": 8.26707674748576,
+      "ordinary_linf": 1.0273941388951564,
+      "ordinary_residual": 37.34964120306527,
+      "ordinary_sigma": 1.1810993599175772,
+      "debiased_l2": 7.1643644833966516,
+      "debiased_linf": 0.8728984204039165,
+      "debiased_residual": 12.773021259271195,
+      "debiased_sigma": 0.4039183978104908
+    },
+    {
+      "rule": "TDP",
+      "method": "Nesterov",
+      "parameter": 287,
+      "k0": 287,
+      "diagnostics": {
+        "selection": "TDP",
+        "parameter_kind": "steps",
+        "selected_count": 287,
+        "first_turn_count": null,
+        "minimum_steps": null,
+        "max_steps": 100000,
+        "recorded_steps": 287,
+        "trace_columns": [
+          "parameter",
+          "coefficient_l2_error",
+          "residual_norm"
+        ],
+        "trace_includes_trigger_after_selected": false,
+        "at_iteration_cap": false,
+        "residual_norm": 37.214544933424925,
+        "coefficient_l2_error": 9.457042780062926,
+        "stopping_threshold": 37.398009755964544,
+        "tdp_satisfied": true,
+        "boundary_checks": [],
+        "landweber_2k_max_difference": null
+      },
+      "elapsed_seconds": 0.0159999999741558,
+      "ordinary_l2": 9.457042780062926,
+      "ordinary_linf": 1.0361718760126217,
+      "ordinary_residual": 37.214544933424925,
+      "ordinary_sigma": 1.1768272407630198,
+      "debiased_l2": 8.435551669108781,
+      "debiased_linf": 0.9179896076073423,
+      "debiased_residual": 23.622311376938313,
+      "debiased_sigma": 0.7470030754883338
+    },
+    {
+      "rule": "TDP",
+      "method": "FAR",
+      "parameter": 1120,
+      "k0": 1120,
+      "diagnostics": {
+        "selection": "TDP",
+        "parameter_kind": "steps",
+        "selected_count": 1120,
+        "first_turn_count": null,
+        "minimum_steps": null,
+        "max_steps": 2000,
+        "recorded_steps": 1120,
+        "trace_columns": [
+          "parameter",
+          "coefficient_l2_error",
+          "residual_norm"
+        ],
+        "trace_includes_trigger_after_selected": false,
+        "at_iteration_cap": false,
+        "residual_norm": 37.380205033618736,
+        "coefficient_l2_error": 9.051866562217718,
+        "stopping_threshold": 37.398009755964544,
+        "tdp_satisfied": true,
+        "boundary_checks": [],
+        "landweber_2k_max_difference": null
+      },
+      "elapsed_seconds": 2.25,
+      "ordinary_l2": 9.051866562217718,
+      "ordinary_linf": 0.9523680691383705,
+      "ordinary_residual": 37.380205033618736,
+      "ordinary_sigma": 1.1820658731032614,
+      "debiased_l2": 7.334164922292723,
+      "debiased_linf": 0.7418288945929801,
+      "debiased_residual": 14.270874438064858,
+      "debiased_sigma": 0.45128467426560476
+    }
+  ],
+  "implementation": "Existing discrete spectral iterates and 2L-LXL debiasing",
+  "environment": {
+    "packages": {
+      "numpy": "1.26.4",
+      "scipy": "1.13.1",
+      "scikit-learn": "1.5.1",
+      "threadpoolctl": "3.5.0"
+    }
+  },
+  "completed_utc": "2026-10-08T12:13:15.306607+00:00",
+  "numerical_audit": "passed",
+  "numerical_audit_record": "independent_numerical_audit.json"
+}

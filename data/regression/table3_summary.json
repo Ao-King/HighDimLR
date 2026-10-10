@@ -1,0 +1,157 @@
+{
+  "methods": {
+    "Ridge": {
+      "records": 1000,
+      "recomputed": {
+        "coverage_I": 0.925,
+        "coverage_II": 0.949,
+        "l2_I": 1.442285792638879,
+        "l2_II": 0.8797766010984597,
+        "linf_I": 0.5518122279521315,
+        "linf_II": 0.3936559151623634,
+        "variance_error_I": 3.0519023368033333,
+        "variance_error_II": 1.1201301255863485
+      },
+      "coverage_counts": [
+        925,
+        949
+      ]
+    },
+    "Landweber": {
+      "records": 1000,
+      "recomputed": {
+        "coverage_I": 0.0,
+        "coverage_II": 0.95,
+        "l2_I": 2.500580004484151,
+        "l2_II": 1.7729303500958429,
+        "linf_I": 0.8327113012521067,
+        "linf_II": 0.6552563460643772,
+        "variance_error_I": 9.246613190386013,
+        "variance_error_II": 4.607056355263615
+      },
+      "coverage_counts": [
+        0,
+        950
+      ]
+    },
+    "Showalter": {
+      "records": 1000,
+      "recomputed": {
+        "coverage_I": 0.0,
+        "coverage_II": 0.95,
+        "l2_I": 2.500806803977452,
+        "l2_II": 1.772601567129359,
+        "linf_I": 0.8327720424655399,
+        "linf_II": 0.655158043273393,
+        "variance_error_I": 9.248372433283928,
+        "variance_error_II": 4.605327430913739
+      },
+      "coverage_counts": [
+        0,
+        950
+      ]
+    },
+    "ARk": {
+      "records": 1000,
+      "recomputed": {
+        "coverage_I": 0.008,
+        "coverage_II": 0.951,
+        "l2_I": 2.4097868327746923,
+        "l2_II": 1.7940598880007341,
+        "linf_I": 0.8079767396946026,
+        "linf_II": 0.6620195967543645,
+        "variance_error_I": 8.567327277790033,
+        "variance_error_II": 4.718451867333594
+      },
+      "coverage_counts": [
+        8,
+        951
+      ]
+    },
+    "SOAR": {
+      "records": 1000,
+      "recomputed": {
+        "coverage_I": 0.824,
+        "coverage_II": 0.951,
+        "l2_I": 2.0508410591486506,
+        "l2_II": 1.9262367016149458,
+        "linf_I": 0.7040370181418721,
+        "linf_II": 0.7002060675362191,
+        "variance_error_I": 6.12311232956702,
+        "variance_error_II": 5.459033630704618
+      },
+      "coverage_counts": [
+        824,
+        951
+      ]
+    },
+    "Nesterov": {
+      "records": 1000,
+      "recomputed": {
+        "coverage_I": 0.01,
+        "coverage_II": 0.95,
+        "l2_I": 2.393701467571538,
+        "l2_II": 1.7985947438285013,
+        "linf_I": 0.8041849572548059,
+        "linf_II": 0.6636861973134606,
+        "variance_error_I": 8.452290416040324,
+        "variance_error_II": 4.742555485262847
+      },
+      "coverage_counts": [
+        10,
+        950
+      ]
+    },
+    "HBF": {
+      "records": 1000,
+      "recomputed": {
+        "coverage_I": 0.507,
+        "coverage_II": 0.949,
+        "l2_I": 2.0635870391431137,
+        "l2_II": 1.7381921849629538,
+        "linf_I": 0.7211577726046593,
+        "linf_II": 0.6510229123518823,
+        "variance_error_I": 6.248258590992903,
+        "variance_error_II": 4.426573986436424
+      },
+      "coverage_counts": [
+        507,
+        949
+      ]
+    },
+    "FAR": {
+      "records": 1000,
+      "recomputed": {
+        "coverage_I": 0.813,
+        "coverage_II": 0.954,
+        "l2_I": 1.914283087469044,
+        "l2_II": 1.6952948524837341,
+        "linf_I": 0.68021094973908,
+        "linf_II": 0.6397002736613467,
+        "variance_error_I": 5.341682091380224,
+        "variance_error_II": 4.209871764034566
+      },
+      "coverage_counts": [
+        813,
+        954
+      ]
+    },
+    "SC": {
+      "records": 1000,
+      "recomputed": {
+        "coverage_I": 0.922,
+        "coverage_II": 0.926,
+        "l2_I": 1.0083995299820474,
+        "l2_II": 1.0083995299820474,
+        "linf_I": 0.4363931003812807,
+        "linf_II": 0.4363931003812807,
+        "variance_error_I": 1.479409064490566,
+        "variance_error_II": 1.479409064490566
+      },
+      "coverage_counts": [
+        922,
+        926
+      ]
+    }
+  }
+}

@@ -1,4 +1,4 @@
-function [K,M,C,M0] = Stiff(rt)
+function [K,M,C,M0] = Stiff(rt,mesh)
 % Stiff assemble stiff and mass matrices
 % USAGE
 %   [K,M,C,M0] = Stiff(rt)
@@ -16,7 +16,9 @@ function [K,M,C,M0] = Stiff(rt)
 %--------------------------------------------------------------------------
 % Initialize the data 
 %--------------------------------------------------------------------------
-mesh = Mesh(rt);
+if nargin < 2
+    mesh = Mesh(rt);
+end
 n = size(mesh.node,1);
 K = sparse(n,n); % stiff matrix
 C = sparse(n,n); % stiff corresponding to Neumann boundary condition
@@ -49,13 +51,11 @@ M = sparse(mesh.elem(:,[1,1,1,2,2,2,3,3,3]), ...
 %--------------------------------------------------------------------------
 % Assemble Mass matrix M0 associated with \Omega_0
 %--------------------------------------------------------------------------              
-% find out elements in \Omega_0: -0.5<x,y<0.5 where f = 1+x+y             
-indexe = find(mesh.node(mesh.elem(:,1),1)>-0.5 & mesh.node(mesh.elem(:,1),1)<0.5 ...
-            & mesh.node(mesh.elem(:,1),2)>-0.5 & mesh.node(mesh.elem(:,1),2)<0.5 ...
-            & mesh.node(mesh.elem(:,2),1)>-0.5 & mesh.node(mesh.elem(:,2),1)<0.5 ...
-            & mesh.node(mesh.elem(:,2),2)>-0.5 & mesh.node(mesh.elem(:,2),2)<0.5 ...
-            & mesh.node(mesh.elem(:,3),1)>-0.5 & mesh.node(mesh.elem(:,3),1)<0.5 ...
-            & mesh.node(mesh.elem(:,3),2)>-0.5 & mesh.node(mesh.elem(:,3),2)<0.5);
+% The mesh conforms to the square interface. Include its boundary vertices:
+% excluding them removes whole positive-area source elements, not just edges.
+sourceTolerance = 64 * eps(max(1, max(abs(mesh.node(:)))));
+inSource = all(abs(mesh.node) <= 0.5 + sourceTolerance, 2);
+indexe = find(all(inSource(mesh.elem), 2));
 % trisurf(mesh.elem, mesh.node(:,1), mesh.node(:,2), zeros(size(mesh.node,1),1));
 % view(2), hold on
 % node = [mesh.elem(indexe,1);mesh.elem(indexe,2);mesh.elem(indexe,3)];         

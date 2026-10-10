@@ -1,0 +1,605 @@
+{
+  "status": "passed",
+  "rows": 22,
+  "X_hash": "eabdee9dcb96a8312ca7ea0897a56e0a5af8392f7e48eb2e2cdc4a304261e9ef",
+  "beta_hash": "df04d3a6c1b40f54f76bdfba508758e221b5d3c18bfb0ea4b4f547cf0ed3fbee",
+  "noise_root": 2026100802,
+  "index": 0,
+  "noise_variance": 4.0,
+  "checks": [
+    {
+      "distribution": "Normal",
+      "method": "LS",
+      "status": "passed",
+      "canonical_parameter_and_pair": true,
+      "canonical_threshold_grid": true,
+      "normal_archive_reuse": {
+        "performed": false
+      },
+      "lasso_full_grid": null,
+      "tdp_diagnostics": {}
+    },
+    {
+      "distribution": "Normal",
+      "method": "SC",
+      "status": "passed",
+      "canonical_parameter_and_pair": true,
+      "canonical_threshold_grid": true,
+      "normal_archive_reuse": {
+        "performed": false
+      },
+      "lasso_full_grid": null,
+      "tdp_diagnostics": {
+        "selected_count": 865,
+        "at_iteration_cap": false,
+        "residual_norm": 25.90104953511143,
+        "tdp_satisfied": null,
+        "parameter_kind": "rank"
+      }
+    },
+    {
+      "distribution": "Normal",
+      "method": "Lasso",
+      "status": "passed",
+      "canonical_parameter_and_pair": true,
+      "canonical_threshold_grid": true,
+      "normal_archive_reuse": {
+        "performed": false
+      },
+      "lasso_full_grid": {
+        "grid": [
+          0.0,
+          0.001,
+          1.0
+        ],
+        "grid_size": 1001,
+        "all_grid_candidates_converged": true,
+        "convergence_tolerance": 1e-06,
+        "allowed_dual_gap": 8.260692283051417e-05,
+        "max_dual_gap": 4.6730974645470265e-12,
+        "max_iterations": 1,
+        "initialization": "LARS exact-target path interpolated at each alpha; then converged cyclic CD",
+        "precompute_gram": true,
+        "warm_best_alpha": 0.133,
+        "selected_alpha": 0.133,
+        "cold_start_checks": [
+          {
+            "alpha": 0.129,
+            "cold_l2": 0.430468633328759,
+            "warm_l2": 0.4304650971417541,
+            "max_coefficient_difference": 2.134055531606213e-06
+          },
+          {
+            "alpha": 0.13,
+            "cold_l2": 0.43033293600365574,
+            "warm_l2": 0.43032988337490785,
+            "max_coefficient_difference": 1.9694632321890383e-06
+          },
+          {
+            "alpha": 0.131,
+            "cold_l2": 0.4302434424631687,
+            "warm_l2": 0.43024073176410693,
+            "max_coefficient_difference": 1.8415245330040929e-06
+          },
+          {
+            "alpha": 0.132,
+            "cold_l2": 0.4302057957322568,
+            "warm_l2": 0.4302041755263753,
+            "max_coefficient_difference": 1.4754162506042112e-06
+          },
+          {
+            "alpha": 0.133,
+            "cold_l2": 0.4301877043997788,
+            "warm_l2": 0.4301904740351073,
+            "max_coefficient_difference": 1.662340794003625e-06
+          },
+          {
+            "alpha": 0.134,
+            "cold_l2": 0.43029496265790584,
+            "warm_l2": 0.43029124475117675,
+            "max_coefficient_difference": 2.2068385761020437e-06
+          },
+          {
+            "alpha": 0.135,
+            "cold_l2": 0.4305061403363035,
+            "warm_l2": 0.43050292010733476,
+            "max_coefficient_difference": 2.2362187062606453e-06
+          },
+          {
+            "alpha": 0.136,
+            "cold_l2": 0.43078827010854803,
+            "warm_l2": 0.43078548458189314,
+            "max_coefficient_difference": 1.9694615768749146e-06
+          },
+          {
+            "alpha": 0.137,
+            "cold_l2": 0.43114986811982203,
+            "warm_l2": 0.43114781487924986,
+            "max_coefficient_difference": 1.8610228107451832e-06
+          }
+        ],
+        "outside_checked_window_warm_error_min": 0.43065888330033025,
+        "selected_l2": 0.4301877043997788,
+        "outside_window_error_separation": 0.00047117890055142775,
+        "maximum_observed_cold_warm_l2_difference": 3.7179067290948886e-06,
+        "path_warning_messages": [],
+        "elapsed_seconds": 10.25,
+        "numerical_scope": "Finite-grid numerical selection with complete converged path and cold validation near the optimum; not a symbolic certificate of identical floating-point CD histories."
+      },
+      "tdp_diagnostics": {}
+    },
+    {
+      "distribution": "Normal",
+      "method": "Ridge",
+      "status": "passed",
+      "canonical_parameter_and_pair": true,
+      "canonical_threshold_grid": true,
+      "normal_archive_reuse": {
+        "performed": true,
+        "source": "HighDimLR-master/outputs/ridge-new-designs-20261007/matrix_02/replications/rep_000000.npz",
+        "percentile_source": "HighDimLR-master/outputs/ridge-matrix02-percentiles-20261007/replications/rep_000000.npz",
+        "parameter_match": true,
+        "raw_max_difference": 0.0,
+        "center_max_difference": 0.0,
+        "threshold_max_difference": 0.0
+      },
+      "lasso_full_grid": null,
+      "tdp_diagnostics": {
+        "selected_count": null,
+        "at_iteration_cap": false,
+        "residual_norm": 29.882266613719764,
+        "tdp_satisfied": null,
+        "parameter_kind": "alpha"
+      }
+    },
+    {
+      "distribution": "Normal",
+      "method": "Landweber",
+      "status": "passed",
+      "canonical_parameter_and_pair": true,
+      "canonical_threshold_grid": true,
+      "normal_archive_reuse": {
+        "performed": true,
+        "source": "HighDimLR-master/outputs/matrix02-method-search-20261008/Landweber_base_tau0.9/replications/rep_000000.npz",
+        "parameter_match": true,
+        "raw_max_difference": 2.6645352591003757e-15,
+        "center_max_difference": 2.6645352591003757e-15,
+        "threshold_max_difference": 0.0
+      },
+      "lasso_full_grid": null,
+      "tdp_diagnostics": {
+        "selected_count": 589,
+        "at_iteration_cap": false,
+        "residual_norm": 55.92542108538692,
+        "tdp_satisfied": true,
+        "parameter_kind": "steps",
+        "stopping_threshold": 55.95173199654901
+      }
+    },
+    {
+      "distribution": "Normal",
+      "method": "Showalter",
+      "status": "passed",
+      "canonical_parameter_and_pair": true,
+      "canonical_threshold_grid": true,
+      "normal_archive_reuse": {
+        "performed": true,
+        "source": "HighDimLR-master/outputs/matrix02-method-search-20261008/Showalter_base_tau0.9/replications/rep_000000.npz",
+        "parameter_match": true,
+        "raw_max_difference": 1.5543122344752192e-15,
+        "center_max_difference": 1.5543122344752192e-15,
+        "threshold_max_difference": 0.0
+      },
+      "lasso_full_grid": null,
+      "tdp_diagnostics": {
+        "selected_count": 590,
+        "at_iteration_cap": false,
+        "residual_norm": 55.90172550129158,
+        "tdp_satisfied": true,
+        "parameter_kind": "steps",
+        "stopping_threshold": 55.95173199654901
+      }
+    },
+    {
+      "distribution": "Normal",
+      "method": "HBF",
+      "status": "passed",
+      "canonical_parameter_and_pair": true,
+      "canonical_threshold_grid": true,
+      "normal_archive_reuse": {
+        "performed": true,
+        "source": "HighDimLR-master/outputs/matrix02-method-search-20261008/HBF_eta50_tau0.9/replications/rep_000000.npz",
+        "parameter_match": true,
+        "raw_max_difference": 1.5543122344752192e-15,
+        "center_max_difference": 1.5543122344752192e-15,
+        "threshold_max_difference": 0.0
+      },
+      "lasso_full_grid": null,
+      "tdp_diagnostics": {
+        "selected_count": 176,
+        "at_iteration_cap": false,
+        "residual_norm": 55.93521168009518,
+        "tdp_satisfied": true,
+        "parameter_kind": "steps",
+        "stopping_threshold": 55.95173199654901
+      }
+    },
+    {
+      "distribution": "Normal",
+      "method": "ARk",
+      "status": "passed",
+      "canonical_parameter_and_pair": true,
+      "canonical_threshold_grid": true,
+      "normal_archive_reuse": {
+        "performed": true,
+        "source": "HighDimLR-master/outputs/matrix02-method-search-20261008/ARk_base_tau0.9/replications/rep_000000.npz",
+        "parameter_match": true,
+        "raw_max_difference": 3.552713678800501e-15,
+        "center_max_difference": 3.552713678800501e-15,
+        "threshold_max_difference": 0.0
+      },
+      "lasso_full_grid": null,
+      "tdp_diagnostics": {
+        "selected_count": 263,
+        "at_iteration_cap": false,
+        "residual_norm": 55.545537729040895,
+        "tdp_satisfied": true,
+        "parameter_kind": "steps",
+        "stopping_threshold": 55.95173199654901
+      }
+    },
+    {
+      "distribution": "Normal",
+      "method": "SOAR",
+      "status": "passed",
+      "canonical_parameter_and_pair": true,
+      "canonical_threshold_grid": true,
+      "normal_archive_reuse": {
+        "performed": true,
+        "source": "HighDimLR-master/outputs/matrix02-method-search-20261008/SOAR_base_tau1.1/replications/rep_000000.npz",
+        "parameter_match": true,
+        "raw_max_difference": 1.7763568394002505e-15,
+        "center_max_difference": 1.7763568394002505e-15,
+        "threshold_max_difference": 0.0
+      },
+      "lasso_full_grid": null,
+      "tdp_diagnostics": {
+        "selected_count": 332,
+        "at_iteration_cap": false,
+        "residual_norm": 68.25732200972905,
+        "tdp_satisfied": true,
+        "parameter_kind": "steps",
+        "stopping_threshold": 68.38545021800435
+      }
+    },
+    {
+      "distribution": "Normal",
+      "method": "Nesterov",
+      "status": "passed",
+      "canonical_parameter_and_pair": true,
+      "canonical_threshold_grid": true,
+      "normal_archive_reuse": {
+        "performed": true,
+        "source": "HighDimLR-master/outputs/matrix02-method-search-20261008/Nesterov_base_tau0.9/replications/rep_000000.npz",
+        "parameter_match": true,
+        "raw_max_difference": 1.3322676295501878e-15,
+        "center_max_difference": 1.3322676295501878e-15,
+        "threshold_max_difference": 0.0
+      },
+      "lasso_full_grid": null,
+      "tdp_diagnostics": {
+        "selected_count": 89,
+        "at_iteration_cap": false,
+        "residual_norm": 55.82874790223818,
+        "tdp_satisfied": true,
+        "parameter_kind": "steps",
+        "stopping_threshold": 55.95173199654901
+      }
+    },
+    {
+      "distribution": "Normal",
+      "method": "FAR",
+      "status": "passed",
+      "canonical_parameter_and_pair": true,
+      "canonical_threshold_grid": true,
+      "normal_archive_reuse": {
+        "performed": true,
+        "source": "HighDimLR-master/outputs/matrix02-method-search-20261008/FAR_theta1.3_tau0.9/replications/rep_000000.npz",
+        "parameter_match": true,
+        "raw_max_difference": 2.220446049250313e-15,
+        "center_max_difference": 2.220446049250313e-15,
+        "threshold_max_difference": 0.0
+      },
+      "lasso_full_grid": null,
+      "tdp_diagnostics": {
+        "selected_count": 152,
+        "at_iteration_cap": false,
+        "residual_norm": 55.81583455791595,
+        "tdp_satisfied": true,
+        "parameter_kind": "steps",
+        "stopping_threshold": 55.95173199654901
+      }
+    },
+    {
+      "distribution": "Laplace",
+      "method": "LS",
+      "status": "passed",
+      "canonical_parameter_and_pair": true,
+      "canonical_threshold_grid": true,
+      "normal_archive_reuse": {
+        "performed": false
+      },
+      "lasso_full_grid": null,
+      "tdp_diagnostics": {}
+    },
+    {
+      "distribution": "Laplace",
+      "method": "SC",
+      "status": "passed",
+      "canonical_parameter_and_pair": true,
+      "canonical_threshold_grid": true,
+      "normal_archive_reuse": {
+        "performed": false
+      },
+      "lasso_full_grid": null,
+      "tdp_diagnostics": {
+        "selected_count": 855,
+        "at_iteration_cap": false,
+        "residual_norm": 27.0074808756974,
+        "tdp_satisfied": null,
+        "parameter_kind": "rank"
+      }
+    },
+    {
+      "distribution": "Laplace",
+      "method": "Lasso",
+      "status": "passed",
+      "canonical_parameter_and_pair": true,
+      "canonical_threshold_grid": true,
+      "normal_archive_reuse": {
+        "performed": false
+      },
+      "lasso_full_grid": {
+        "grid": [
+          0.0,
+          0.001,
+          1.0
+        ],
+        "grid_size": 1001,
+        "all_grid_candidates_converged": true,
+        "convergence_tolerance": 1e-06,
+        "allowed_dual_gap": 7.753171932461679e-05,
+        "max_dual_gap": 1.506123226135969e-12,
+        "max_iterations": 1,
+        "initialization": "LARS exact-target path interpolated at each alpha; then converged cyclic CD",
+        "precompute_gram": true,
+        "warm_best_alpha": 0.12,
+        "selected_alpha": 0.12,
+        "cold_start_checks": [
+          {
+            "alpha": 0.116,
+            "cold_l2": 0.6347470489611983,
+            "warm_l2": 0.6347454523905097,
+            "max_coefficient_difference": 2.3258149129956607e-06
+          },
+          {
+            "alpha": 0.117,
+            "cold_l2": 0.6345338964780596,
+            "warm_l2": 0.6345326658034348,
+            "max_coefficient_difference": 2.049670719938418e-06
+          },
+          {
+            "alpha": 0.11800000000000001,
+            "cold_l2": 0.6343672740423222,
+            "warm_l2": 0.6343664407246642,
+            "max_coefficient_difference": 1.7061614397510805e-06
+          },
+          {
+            "alpha": 0.11900000000000001,
+            "cold_l2": 0.6342946519413941,
+            "warm_l2": 0.6342940763531483,
+            "max_coefficient_difference": 1.6306703196147798e-06
+          },
+          {
+            "alpha": 0.12,
+            "cold_l2": 0.6342832048070708,
+            "warm_l2": 0.6342811193901683,
+            "max_coefficient_difference": 2.99564332639779e-06
+          },
+          {
+            "alpha": 0.121,
+            "cold_l2": 0.634336286228545,
+            "warm_l2": 0.63433439706869,
+            "max_coefficient_difference": 2.6819464205019017e-06
+          },
+          {
+            "alpha": 0.122,
+            "cold_l2": 0.6344540975171463,
+            "warm_l2": 0.634452530725067,
+            "max_coefficient_difference": 2.4126223192588725e-06
+          },
+          {
+            "alpha": 0.123,
+            "cold_l2": 0.6346447022877323,
+            "warm_l2": 0.6346435886519939,
+            "max_coefficient_difference": 2.040211431353356e-06
+          },
+          {
+            "alpha": 0.124,
+            "cold_l2": 0.6349337643385887,
+            "warm_l2": 0.6349329342693261,
+            "max_coefficient_difference": 1.7649411888261135e-06
+          }
+        ],
+        "outside_checked_window_warm_error_min": 0.6349705385216666,
+        "selected_l2": 0.6342832048070708,
+        "outside_window_error_separation": 0.0006873337145958391,
+        "maximum_observed_cold_warm_l2_difference": 2.0854169024975278e-06,
+        "path_warning_messages": [],
+        "elapsed_seconds": 10.968999999997322,
+        "numerical_scope": "Finite-grid numerical selection with complete converged path and cold validation near the optimum; not a symbolic certificate of identical floating-point CD histories."
+      },
+      "tdp_diagnostics": {}
+    },
+    {
+      "distribution": "Laplace",
+      "method": "Ridge",
+      "status": "passed",
+      "canonical_parameter_and_pair": true,
+      "canonical_threshold_grid": true,
+      "normal_archive_reuse": {
+        "performed": false
+      },
+      "lasso_full_grid": null,
+      "tdp_diagnostics": {
+        "selected_count": null,
+        "at_iteration_cap": false,
+        "residual_norm": 29.887880910452683,
+        "tdp_satisfied": null,
+        "parameter_kind": "alpha"
+      }
+    },
+    {
+      "distribution": "Laplace",
+      "method": "Landweber",
+      "status": "passed",
+      "canonical_parameter_and_pair": true,
+      "canonical_threshold_grid": true,
+      "normal_archive_reuse": {
+        "performed": false
+      },
+      "lasso_full_grid": null,
+      "tdp_diagnostics": {
+        "selected_count": 563,
+        "at_iteration_cap": false,
+        "residual_norm": 57.35110087253733,
+        "tdp_satisfied": true,
+        "parameter_kind": "steps",
+        "stopping_threshold": 57.410931489401115
+      }
+    },
+    {
+      "distribution": "Laplace",
+      "method": "Showalter",
+      "status": "passed",
+      "canonical_parameter_and_pair": true,
+      "canonical_threshold_grid": true,
+      "normal_archive_reuse": {
+        "performed": false
+      },
+      "lasso_full_grid": null,
+      "tdp_diagnostics": {
+        "selected_count": 563,
+        "at_iteration_cap": false,
+        "residual_norm": 57.38757280271853,
+        "tdp_satisfied": true,
+        "parameter_kind": "steps",
+        "stopping_threshold": 57.410931489401115
+      }
+    },
+    {
+      "distribution": "Laplace",
+      "method": "HBF",
+      "status": "passed",
+      "canonical_parameter_and_pair": true,
+      "canonical_threshold_grid": true,
+      "normal_archive_reuse": {
+        "performed": false
+      },
+      "lasso_full_grid": null,
+      "tdp_diagnostics": {
+        "selected_count": 169,
+        "at_iteration_cap": false,
+        "residual_norm": 57.376683407308605,
+        "tdp_satisfied": true,
+        "parameter_kind": "steps",
+        "stopping_threshold": 57.410931489401115
+      }
+    },
+    {
+      "distribution": "Laplace",
+      "method": "ARk",
+      "status": "passed",
+      "canonical_parameter_and_pair": true,
+      "canonical_threshold_grid": true,
+      "normal_archive_reuse": {
+        "performed": false
+      },
+      "lasso_full_grid": null,
+      "tdp_diagnostics": {
+        "selected_count": 259,
+        "at_iteration_cap": false,
+        "residual_norm": 57.3415013305379,
+        "tdp_satisfied": true,
+        "parameter_kind": "steps",
+        "stopping_threshold": 57.410931489401115
+      }
+    },
+    {
+      "distribution": "Laplace",
+      "method": "SOAR",
+      "status": "passed",
+      "canonical_parameter_and_pair": true,
+      "canonical_threshold_grid": true,
+      "normal_archive_reuse": {
+        "performed": false
+      },
+      "lasso_full_grid": null,
+      "tdp_diagnostics": {
+        "selected_count": 319,
+        "at_iteration_cap": false,
+        "residual_norm": 70.04218540510044,
+        "tdp_satisfied": true,
+        "parameter_kind": "steps",
+        "stopping_threshold": 70.1689162648236
+      }
+    },
+    {
+      "distribution": "Laplace",
+      "method": "Nesterov",
+      "status": "passed",
+      "canonical_parameter_and_pair": true,
+      "canonical_threshold_grid": true,
+      "normal_archive_reuse": {
+        "performed": false
+      },
+      "lasso_full_grid": null,
+      "tdp_diagnostics": {
+        "selected_count": 87,
+        "at_iteration_cap": false,
+        "residual_norm": 57.21312136933391,
+        "tdp_satisfied": true,
+        "parameter_kind": "steps",
+        "stopping_threshold": 57.410931489401115
+      }
+    },
+    {
+      "distribution": "Laplace",
+      "method": "FAR",
+      "status": "passed",
+      "canonical_parameter_and_pair": true,
+      "canonical_threshold_grid": true,
+      "normal_archive_reuse": {
+        "performed": false
+      },
+      "lasso_full_grid": null,
+      "tdp_diagnostics": {
+        "selected_count": 144,
+        "at_iteration_cap": false,
+        "residual_norm": 57.3920982571258,
+        "tdp_satisfied": true,
+        "parameter_kind": "steps",
+        "stopping_threshold": 57.410931489401115
+      }
+    }
+  ],
+  "source_sha256": {
+    "HighDimLR-master/tmp/compute_matrix2_paper_points.py": "dbc31fc3e5352368ab56a38a41d88d1589cb8f6b92cd0cb43c655dea11e1d372",
+    "HighDimLR-master/regression_common.py": "ac2f2077ac0e57559b246e5423097038a3ab494892460e9838ab47e6d0a02cb9",
+    "HighDimLR-master/regression_spectral.py": "97d3b45571ab0fadb693b6b7358ab18cdad7ca2e046d4b22a56ceb80e941fefc",
+    "HighDimLR-master/regression_threshold_scan.py": "0dba5764396e08dd638793433d30cbd38e7b88d9c7f2f203d3d16b0329dddcd6",
+    "HighDimLR-master/regression_results.py": "a694cf3e8d9d3eaa2ec8ab098bbef06094619256bb802a47141f9ab7510fe30c"
+  },
+  "validation_tolerance": 1e-10,
+  "no_existing_archives_modified": true
+}

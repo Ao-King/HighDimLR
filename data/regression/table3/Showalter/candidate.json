@@ -1,0 +1,85 @@
+{
+  "method": "Showalter",
+  "settings": {
+    "selection": "TDP",
+    "max_steps": 10000,
+    "step": 2.5e-06,
+    "tau": 0.9
+  },
+  "N": 1000,
+  "summary": {
+    "raw_l2_mean": [
+      3.698958484984977,
+      3.3391321650489614
+    ],
+    "raw_linf_mean": [
+      0.8327720424655399,
+      0.655158043273393
+    ],
+    "threshold_l2_mean": [
+      2.500806803977452,
+      1.772601567129359
+    ],
+    "threshold_linf_mean": [
+      0.8327720424655399,
+      0.655158043273393
+    ],
+    "raw_both_improved": true,
+    "threshold_both_improved": true,
+    "all_error_means_improved": true,
+    "tdp_satisfied_count": 1000,
+    "at_iteration_cap_count": 0,
+    "valid_count": 1000,
+    "steps_mean": 575.762,
+    "steps_range": [
+      507,
+      654
+    ]
+  },
+  "validation": [
+    {
+      "index": 0,
+      "parameter_match": true,
+      "max_estimate_abs_difference": 1.5543122344752192e-15,
+      "threshold_bounds_difference": 0.0,
+      "center_difference": 0.0,
+      "canonical_tdp_satisfied": true
+    },
+    {
+      "index": 17,
+      "parameter_match": true,
+      "max_estimate_abs_difference": 1.3322676295501878e-15,
+      "threshold_bounds_difference": 0.0,
+      "center_difference": 0.0,
+      "canonical_tdp_satisfied": true
+    },
+    {
+      "index": 99,
+      "parameter_match": true,
+      "max_estimate_abs_difference": 1.5543122344752192e-15,
+      "threshold_bounds_difference": 0.0,
+      "center_difference": 0.0,
+      "canonical_tdp_satisfied": true
+    },
+    {
+      "index": 333,
+      "parameter_match": true,
+      "max_estimate_abs_difference": 2.220446049250313e-15,
+      "threshold_bounds_difference": 0.0,
+      "center_difference": 0.0,
+      "canonical_tdp_satisfied": true
+    },
+    {
+      "index": 999,
+      "parameter_match": true,
+      "max_estimate_abs_difference": 1.5543122344752192e-15,
+      "threshold_bounds_difference": 0.0,
+      "center_difference": 0.0,
+      "canonical_tdp_satisfied": true
+    }
+  ],
+  "trajectory_failure": null,
+  "trajectory_completed_steps": 768,
+  "source_hash": "97d3b45571ab0fadb693b6b7358ab18cdad7ca2e046d4b22a56ceb80e941fefc",
+  "interpretation": "Paired screening on fixed matrix and known truth; no independent validation"
+}

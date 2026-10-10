@@ -1,0 +1,89 @@
+{
+  "method": "SOAR",
+  "settings": {
+    "selection": "TDP",
+    "max_steps": 10000,
+    "step": 0.00025,
+    "s_star": 0.5,
+    "tau": 1.1
+  },
+  "N": 1000,
+  "summary": {
+    "raw_l2_mean": [
+      3.865182245924836,
+      3.419972564252687
+    ],
+    "raw_linf_mean": [
+      0.7040370181418721,
+      0.7002060675362191
+    ],
+    "threshold_l2_mean": [
+      2.0508410591486506,
+      1.9262367016149458
+    ],
+    "threshold_linf_mean": [
+      0.7040370181418721,
+      0.7002060675362191
+    ],
+    "raw_both_improved": true,
+    "threshold_both_improved": true,
+    "all_error_means_improved": true,
+    "tdp_satisfied_count": 1000,
+    "at_iteration_cap_count": 0,
+    "valid_count": 1000,
+    "steps_mean": 324.544,
+    "steps_range": [
+      303,
+      346
+    ]
+  },
+  "validation": [
+    {
+      "index": 0,
+      "parameter_match": true,
+      "max_estimate_abs_difference": 1.7763568394002505e-15,
+      "threshold_bounds_difference": 0.0,
+      "center_difference": 0.0,
+      "canonical_tdp_satisfied": true
+    },
+    {
+      "index": 17,
+      "parameter_match": true,
+      "max_estimate_abs_difference": 1.7763568394002505e-15,
+      "threshold_bounds_difference": 0.0,
+      "center_difference": 0.0,
+      "canonical_tdp_satisfied": true
+    },
+    {
+      "index": 99,
+      "parameter_match": true,
+      "max_estimate_abs_difference": 1.5543122344752192e-15,
+      "threshold_bounds_difference": 0.0,
+      "center_difference": 0.0,
+      "canonical_tdp_satisfied": true
+    },
+    {
+      "index": 333,
+      "parameter_match": true,
+      "max_estimate_abs_difference": 1.7763568394002505e-15,
+      "threshold_bounds_difference": 0.0,
+      "center_difference": 0.0,
+      "canonical_tdp_satisfied": true
+    },
+    {
+      "index": 999,
+      "parameter_match": true,
+      "max_estimate_abs_difference": 1.5543122344752192e-15,
+      "threshold_bounds_difference": 0.0,
+      "center_difference": 0.0,
+      "canonical_tdp_satisfied": true
+    }
+  ],
+  "trajectory_failure": null,
+  "trajectory_completed_steps": 512,
+  "source_hash": "97d3b45571ab0fadb693b6b7358ab18cdad7ca2e046d4b22a56ceb80e941fefc",
+  "interpretation": "Paired screening on fixed matrix and known truth; no independent validation",
+  "X_hash": "eabdee9dcb96a8312ca7ea0897a56e0a5af8392f7e48eb2e2cdc4a304261e9ef",
+  "X_raw_bytes_sha256": "af4c695fb4b8479ddca605b747d411a1150440296479e2c7265c7fc98b2f3829",
+  "beta_hash": "df04d3a6c1b40f54f76bdfba508758e221b5d3c18bfb0ea4b4f547cf0ed3fbee"
+}

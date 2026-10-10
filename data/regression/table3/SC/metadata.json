@@ -1,0 +1,41 @@
+{
+  "B": 500,
+  "N": 1000,
+  "X_hash": "eabdee9dcb96a8312ca7ea0897a56e0a5af8392f7e48eb2e2cdc4a304261e9ef",
+  "beta_hash": "df04d3a6c1b40f54f76bdfba508758e221b5d3c18bfb0ea4b4f547cf0ed3fbee",
+  "bootstrap_rule": "500 independent original/debiased Gaussian draws with canonical (root,outer,1,b) RNG",
+  "confidence": 0.95,
+  "created_at": "2026-10-08T00:34:48.252696+00:00",
+  "data_origin": "HighDimLR-master/outputs/ridge-new-designs-20261007/matrix_02/data.npz",
+  "debias_rule": "SC idempotence: point estimators identical; bootstrap branch draws independent",
+  "execution_source_sha256": {
+    "tmp\\run_matrix02_sc_paper_statistics_fast.py": "b1d43f18a699d352eb5e265c8160a9d1f6461f03dc261316683e7fa84a74754e"
+  },
+  "method": "SC",
+  "n": 1000,
+  "noise_root": 2026100802,
+  "p": 1000,
+  "parameter_kind": "rank",
+  "percentile": 0.0,
+  "rank_acceleration": "nonnegative prefix/suffix spectral oracle squared errors; close candidates reevaluated by canonical scalar norms, descending ties",
+  "rank_rule": "canonical ordinary raw oracle L2; ranks 1000 down to 1; first strict minimum",
+  "settings": {
+    "rank_max": 1000,
+    "selection": "oracle_rank"
+  },
+  "sigma": 2.0,
+  "source_sha256": {
+    "regression_bootstrap.py": "90454adc8493a077f704fbfc6572db474db3a50a5aa7cd007d3eeb603d2f5924",
+    "regression_common.py": "ac2f2077ac0e57559b246e5423097038a3ab494892460e9838ab47e6d0a02cb9",
+    "regression_execution.py": "976b7e1ce2e0616c84e92d156f46dfa704d19626e33cef76a1501b7ff08c2513",
+    "regression_results.py": "a694cf3e8d9d3eaa2ec8ab098bbef06094619256bb802a47141f9ab7510fe30c",
+    "regression_spectral.py": "97d3b45571ab0fadb693b6b7358ab18cdad7ca2e046d4b22a56ceb80e941fefc",
+    "regression_threshold_scan.py": "0dba5764396e08dd638793433d30cbd38e7b88d9c7f2f203d3d16b0329dddcd6",
+    "tmp\\matrix2_bootstrap_helpers.py": "e2ed5c8c8d6dae079aa12184952897e645fd4a64fbaf4b66987347ce48156f0d",
+    "tmp\\run_matrix02_sc_paper_statistics.py": "a3416e45be0110d7210b06565870dbf47a5f77aec565fdf8b459a836ba4c5fb1"
+  },
+  "status": "running",
+  "threshold_percentile": 0.0,
+  "threshold_rule": "canonical oracle L2 on .001:.001:1; q=0 first minimum",
+  "version": "matrix02-SC-paper-statistics-v1"
+}
