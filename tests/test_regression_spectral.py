@@ -1,4 +1,4 @@
-"""Compare spectral filters with the unchanged notebook discrete kernels."""
+"""Compare spectral filters with the independent notebook discrete kernels."""
 
 import ast
 import copy
@@ -24,7 +24,7 @@ NOTEBOOKS = {"Landweber": ("Bootstraplandweber", "landweber"),
 
 def settings(method, **changes):
     values = {"step": .05, "max_steps": 12, "minimum_steps": 500,
-              "kappa": .5, "s_star": .5, "omega": 3}
+              "kappa": .5, "s_star": 1.5, "omega": 3}
     values.update(changes)
     return values
 

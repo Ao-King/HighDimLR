@@ -178,6 +178,10 @@ class NotebookRegressionTests(unittest.TestCase):
                             actual = env[replay](X, Y, 0.1, count)
                             np.testing.assert_allclose(actual, expected, atol=1e-12)
                             np.testing.assert_array_equal(env[replay](X, Y, 0.1, 0), np.zeros(3))
+                    if replay == "second_debias":
+                        fitted, selected = env["second"](X, Y, 0.1, 5, stopping_threshold=np.inf)
+                        self.assertEqual(selected, 1)
+                        np.testing.assert_allclose(fitted, env[replay](X, Y, 0.1, selected), atol=1e-12)
 
     def test_landweber_dp_returns_the_iterate_satisfying_discrepancy(self):
         env = functions("NonsparseDP", {"np": np, "delta": 0.91})

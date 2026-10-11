@@ -1,0 +1,22 @@
+{
+  "version": "independent-regression-validation-v1",
+  "status": "complete",
+  "method": "FAR",
+  "N": 1000,
+  "B": 500,
+  "confidence": 0.95,
+  "n": 1000,
+  "p": 1000,
+  "noise_root": 2026101802,
+  "calibration_noise_root": 2026100802,
+  "settings": {
+    "max_steps": 500,
+    "selection": "TDP",
+    "step": 5e-05,
+    "tau": 0.9,
+    "theta": 1.3,
+    "threshold_percentile": 30
+  },
+  "source_summary_sha256": "a4a7c977ce972619eae7973ff3295a36a91ccd221fe25e88ae8afa8a693e18a8",
+  "independence_scope": "Fresh outer and bootstrap noise on the retained Case I design and coefficient vector"
+}

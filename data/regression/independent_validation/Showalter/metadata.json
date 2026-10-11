@@ -1,0 +1,21 @@
+{
+  "version": "independent-regression-validation-v1",
+  "status": "complete",
+  "method": "Showalter",
+  "N": 1000,
+  "B": 500,
+  "confidence": 0.95,
+  "n": 1000,
+  "p": 1000,
+  "noise_root": 2026101802,
+  "calibration_noise_root": 2026100802,
+  "settings": {
+    "max_steps": 10000,
+    "selection": "TDP",
+    "step": 2.5e-06,
+    "tau": 0.9,
+    "threshold_percentile": 34
+  },
+  "source_summary_sha256": "84180132ace6dc363ec0a208b7d6b1f093c6202e1f57b1191c1331539463a90e",
+  "independence_scope": "Fresh outer and bootstrap noise on the retained Case I design and coefficient vector"
+}

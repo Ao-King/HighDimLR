@@ -1,0 +1,383 @@
+{
+  "version": "independent-regression-validation-v1",
+  "status": "complete",
+  "case": "Case I Normal",
+  "n": 1000,
+  "p": 1000,
+  "N": 1000,
+  "B": 500,
+  "confidence": 0.95,
+  "mcse_rule": "sqrt(coverage*(1-coverage)/N); values are proportions",
+  "rows": [
+    {
+      "method": "Landweber",
+      "noise_root": 2026101802,
+      "coverage_counts": [
+        1,
+        950
+      ],
+      "table_row": {
+        "method": "Landweber",
+        "percentile": 34,
+        "mean_parameter": 574.26,
+        "parameter_kind": "steps",
+        "tau": 0.9,
+        "coverage_I": 0.001,
+        "l2_I": 2.5029786971119345,
+        "linf_I": 0.8332126718286454,
+        "variance_error_I": 9.249620004774444,
+        "sigma_I": 3.6391348751512362,
+        "raw_l2_I": 3.7011212477750113,
+        "raw_linf_I": 0.8332126718286454,
+        "radius_I": 0.7028912344033547,
+        "threshold_I": 0.3758803599999999,
+        "coverage_II": 0.95,
+        "l2_II": 1.7756492052842876,
+        "linf_II": 0.6560872106211665,
+        "variance_error_II": 4.607949754078307,
+        "sigma_II": 2.9330795561737406,
+        "raw_l2_II": 3.3412754291801314,
+        "raw_linf_II": 0.6560872106211665,
+        "radius_II": 0.7430056697546129,
+        "threshold_II": 0.4310426599999998
+      },
+      "coverage_mcse": [
+        0.0009994998749374609,
+        0.006892024376045114
+      ],
+      "parameter_range": [
+        507,
+        648
+      ]
+    },
+    {
+      "method": "Showalter",
+      "noise_root": 2026101802,
+      "coverage_counts": [
+        1,
+        950
+      ],
+      "table_row": {
+        "method": "Showalter",
+        "percentile": 34,
+        "mean_parameter": 574.834,
+        "parameter_kind": "steps",
+        "tau": 0.9,
+        "coverage_I": 0.001,
+        "l2_I": 2.503294426861018,
+        "linf_I": 0.8332938478669007,
+        "variance_error_I": 9.252048984645754,
+        "sigma_I": 3.639468342382377,
+        "raw_l2_I": 3.7008754061417255,
+        "raw_linf_I": 0.8332938478669007,
+        "radius_I": 0.7028314001031464,
+        "threshold_I": 0.37582344000000023,
+        "coverage_II": 0.95,
+        "l2_II": 1.775379980990959,
+        "linf_II": 0.6560030298919304,
+        "variance_error_II": 4.606536665488815,
+        "sigma_II": 2.9328388552415983,
+        "raw_l2_II": 3.3409982385505996,
+        "raw_linf_II": 0.6560030298919304,
+        "radius_II": 0.7431609367935205,
+        "threshold_II": 0.43104618
+      },
+      "coverage_mcse": [
+        0.0009994998749374609,
+        0.006892024376045114
+      ],
+      "parameter_range": [
+        507,
+        649
+      ]
+    },
+    {
+      "method": "HBF",
+      "noise_root": 2026101802,
+      "coverage_counts": [
+        529,
+        954
+      ],
+      "table_row": {
+        "coverage_I": 0.529,
+        "coverage_II": 0.954,
+        "l2_I": 2.064697457699435,
+        "l2_II": 1.7409329827651236,
+        "linf_I": 0.721169097637585,
+        "linf_II": 0.6518380299370352,
+        "mean_parameter": 172.392,
+        "method": "HBF",
+        "parameter_kind": "steps",
+        "percentile": 32,
+        "radius_I": 0.7218630447368438,
+        "radius_II": 0.7433132320212559,
+        "raw_l2_I": 3.7036812116941937,
+        "raw_l2_II": 3.3512151290655283,
+        "raw_linf_I": 0.7211690976375846,
+        "raw_linf_II": 0.6518380299370353,
+        "sigma_I": 3.1998052461121205,
+        "sigma_II": 2.9022106474413616,
+        "tau": 0.9,
+        "threshold_I": 0.41292004000000004,
+        "threshold_II": 0.433273,
+        "variance_error_I": 6.241186702599811,
+        "variance_error_II": 4.427400935588552
+      },
+      "coverage_mcse": [
+        0.01578477114183161,
+        0.006624499981130654
+      ],
+      "parameter_range": [
+        158,
+        189
+      ]
+    },
+    {
+      "method": "ARk",
+      "noise_root": 2026101802,
+      "coverage_counts": [
+        9,
+        941
+      ],
+      "table_row": {
+        "method": "ARk",
+        "percentile": 35,
+        "mean_parameter": 260.724,
+        "parameter_kind": "steps",
+        "tau": 0.9,
+        "coverage_I": 0.009,
+        "l2_I": 2.412338472679327,
+        "linf_I": 0.8084761862914247,
+        "variance_error_I": 8.5709402433886,
+        "sigma_I": 3.5445924844341223,
+        "raw_l2_I": 3.7243036589066,
+        "raw_linf_I": 0.8084761862914247,
+        "radius_I": 0.7093687901742572,
+        "threshold_I": 0.3883264499999994,
+        "coverage_II": 0.941,
+        "l2_II": 1.7967184512354333,
+        "linf_II": 0.6627893963890622,
+        "variance_error_II": 4.719201949860505,
+        "sigma_II": 2.9519856629508343,
+        "raw_l2_II": 3.3658819136666245,
+        "raw_linf_II": 0.6627893963890622,
+        "radius_II": 0.7453910496578477,
+        "threshold_II": 0.4342981000000005
+      },
+      "coverage_mcse": [
+        0.002986469487538756,
+        0.007451107300260817
+      ],
+      "parameter_range": [
+        252,
+        270
+      ]
+    },
+    {
+      "method": "SOAR",
+      "noise_root": 2026101101,
+      "coverage_counts": [
+        10,
+        938
+      ],
+      "table_row": {
+        "coverage_I": 0.01,
+        "coverage_II": 0.938,
+        "l2_I": 2.496600400264888,
+        "l2_II": 1.963258161185356,
+        "linf_I": 0.8227865731292449,
+        "linf_II": 0.7052415007817078,
+        "mean_parameter": 407.26,
+        "method": "SOAR",
+        "parameter_kind": "steps",
+        "percentile": 60,
+        "radius_I": 0.719436298786412,
+        "radius_II": 0.7866718909558524,
+        "raw_l2_I": 3.865427921863261,
+        "raw_l2_II": 3.4530185820805634,
+        "raw_linf_I": 0.822786573129245,
+        "raw_linf_II": 0.7052415007817071,
+        "sigma_I": 3.628217415142491,
+        "sigma_II": 3.105874872502128,
+        "tau": 1.01,
+        "threshold_I": 0.42733699999999997,
+        "threshold_II": 0.49236599999999997,
+        "variance_error_I": 9.170329343594075,
+        "variance_error_II": 5.651397064656593
+      },
+      "coverage_mcse": [
+        0.003146426544510455,
+        0.00762600813007697
+      ],
+      "parameter_range": [
+        375,
+        431
+      ]
+    },
+    {
+      "method": "Nesterov",
+      "noise_root": 2026101802,
+      "coverage_counts": [
+        12,
+        942
+      ],
+      "table_row": {
+        "coverage_I": 0.012,
+        "coverage_II": 0.942,
+        "l2_I": 2.396271991527048,
+        "l2_II": 1.8013559859120911,
+        "linf_I": 0.8046834620050045,
+        "linf_II": 0.6644847939526377,
+        "mean_parameter": 88.097,
+        "method": "Nesterov",
+        "parameter_kind": "steps",
+        "percentile": 35,
+        "radius_I": 0.710081714196799,
+        "radius_II": 0.7454498596387994,
+        "raw_l2_I": 3.7295607221248894,
+        "raw_l2_II": 3.3731356799238554,
+        "raw_linf_I": 0.8046834620050024,
+        "raw_linf_II": 0.6644847939526375,
+        "sigma_I": 3.528403639312965,
+        "sigma_II": 2.956154520213301,
+        "tau": 0.9,
+        "threshold_I": 0.3903025,
+        "threshold_II": 0.4346125,
+        "variance_error_I": 8.456068247326936,
+        "variance_error_II": 4.743916298689709
+      },
+      "coverage_mcse": [
+        0.003443254274665175,
+        0.007391616873188169
+      ],
+      "parameter_range": [
+        82,
+        94
+      ]
+    },
+    {
+      "method": "FAR",
+      "noise_root": 2026101802,
+      "coverage_counts": [
+        813,
+        948
+      ],
+      "table_row": {
+        "coverage_I": 0.813,
+        "coverage_II": 0.948,
+        "l2_I": 1.9171955559443894,
+        "l2_II": 1.698255075453777,
+        "linf_I": 0.6807769356998754,
+        "linf_II": 0.6406343958345084,
+        "mean_parameter": 147.66,
+        "method": "FAR",
+        "parameter_kind": "steps",
+        "percentile": 30,
+        "radius_I": 0.7222626082133611,
+        "radius_II": 0.7376076405715682,
+        "raw_l2_I": 3.6740927862133796,
+        "raw_l2_II": 3.3248397855617267,
+        "raw_linf_I": 0.6807769356998756,
+        "raw_linf_II": 0.6406343958345085,
+        "sigma_I": 3.0556677788963897,
+        "sigma_II": 2.8646818890233927,
+        "tau": 0.9,
+        "threshold_I": 0.41888869999999995,
+        "threshold_II": 0.4292166,
+        "variance_error_I": 5.344086725294375,
+        "variance_error_II": 4.211515713533716
+      },
+      "coverage_mcse": [
+        0.012330085157856779,
+        0.007021111023192843
+      ],
+      "parameter_range": [
+        132,
+        164
+      ]
+    },
+    {
+      "method": "SC",
+      "noise_root": 2026101802,
+      "coverage_counts": [
+        906,
+        908
+      ],
+      "table_row": {
+        "coverage_I": 0.906,
+        "coverage_II": 0.908,
+        "l2_I": 1.008460560795077,
+        "l2_II": 1.008460560795077,
+        "linf_I": 0.440058341223929,
+        "linf_II": 0.440058341223929,
+        "mean_parameter": 861.098,
+        "method": "SC",
+        "parameter_kind": "rank",
+        "percentile": 0,
+        "radius_I": 0.5405675734296924,
+        "radius_II": 0.5406219581866758,
+        "raw_l2_I": 3.5361624687686346,
+        "raw_l2_II": 3.5361624687686346,
+        "raw_linf_I": 0.4473661178582892,
+        "raw_linf_II": 0.4473661178582892,
+        "sigma_I": 2.3363060014007426,
+        "sigma_II": 2.3363060014007426,
+        "tau": null,
+        "threshold_I": 0.37441599999999997,
+        "threshold_II": 0.37441599999999997,
+        "variance_error_I": 1.467611998603129,
+        "variance_error_II": 1.467611998603129
+      },
+      "coverage_mcse": [
+        0.009228434320078352,
+        0.009139803061335619
+      ],
+      "parameter_range": [
+        801,
+        906
+      ]
+    },
+    {
+      "method": "Ridge",
+      "noise_root": 2026101802,
+      "coverage_counts": [
+        913,
+        933
+      ],
+      "table_row": {
+        "method": "Ridge",
+        "percentile": 20,
+        "parameter_kind": "alpha",
+        "mean_parameter": 84.2348,
+        "tau": null,
+        "coverage_I": 0.913,
+        "l2_I": 1.4424381384712108,
+        "linf_I": 0.5531852030389145,
+        "variance_error_I": 3.0397611977823313,
+        "sigma_I": 2.6517106355626274,
+        "radius_I": 0.6650349901802823,
+        "threshold_I": 0.38459879999999996,
+        "raw_l2_I": 3.1251670323736223,
+        "raw_linf_I": 0.5531852030389145,
+        "coverage_II": 0.933,
+        "l2_II": 0.8830507945073126,
+        "linf_II": 0.39569340041019685,
+        "variance_error_II": 1.117427372383135,
+        "sigma_II": 2.2608829449605117,
+        "radius_II": 0.5315772042483801,
+        "threshold_II": 0.43499200000000005,
+        "raw_l2_II": 3.334598139421825,
+        "raw_linf_II": 0.4067930338586556
+      },
+      "coverage_mcse": [
+        0.008912407082264588,
+        0.007906389820898028
+      ],
+      "parameter_range": [
+        59.1,
+        117.8
+      ]
+    }
+  ],
+  "source_summary_sha256": "d2d815d897f7e6aa9411963c3d06d2ceab062e99701c6d369962ebcab2ca414e"
+}

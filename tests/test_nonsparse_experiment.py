@@ -67,7 +67,7 @@ def direct(rule, method, X, Y, truth, count, settings, fixed=False):
 
 def options(method, **changes):
     result = {"step": .05, "max_steps": 7, "minimum_steps": 500, "kappa": .5,
-              "s_star": .5, "omega": 3, "eta": 5., "theta": 1.8, "delta": 0.}
+              "s_star": 1.5, "omega": 3, "eta": 5., "theta": 1.8, "delta": 0.}
     result.update(changes)
     return result
 

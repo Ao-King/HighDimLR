@@ -1,0 +1,23 @@
+{
+  "version": "independent-regression-validation-v1",
+  "status": "complete",
+  "method": "HBF",
+  "N": 1000,
+  "B": 500,
+  "confidence": 0.95,
+  "n": 1000,
+  "p": 1000,
+  "noise_root": 2026101802,
+  "calibration_noise_root": 2026100802,
+  "settings": {
+    "eta": 50.0,
+    "integrator": "rk4",
+    "max_steps": 10000,
+    "selection": "TDP",
+    "step": 0.0005,
+    "tau": 0.9,
+    "threshold_percentile": 32
+  },
+  "source_summary_sha256": "e5e21ad699e9afa0c8ed84690996f3e757565aca30b6466b97e54ba9c4dde45d",
+  "independence_scope": "Fresh outer and bootstrap noise on the retained Case I design and coefficient vector"
+}

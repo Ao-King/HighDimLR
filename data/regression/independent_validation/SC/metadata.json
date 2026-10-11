@@ -1,0 +1,21 @@
+{
+  "version": "independent-regression-validation-v1",
+  "status": "complete",
+  "method": "SC",
+  "N": 1000,
+  "B": 500,
+  "confidence": 0.95,
+  "n": 1000,
+  "p": 1000,
+  "noise_root": 2026101802,
+  "calibration_noise_root": 2026100802,
+  "settings": {
+    "rank_max": 1000,
+    "selection": "oracle_rank",
+    "threshold_percentile": 0,
+    "rank_rule": "Descending ranks 1000 to 1; first strict minimum of ordinary raw L2 error",
+    "bootstrap_rule": "Reuse the outer-sample rank and branch thresholds"
+  },
+  "source_summary_sha256": "ce3a500007531c9107859ca72e25555ade1cfee366fcac98443bcf0c7973b936",
+  "independence_scope": "Fresh outer and bootstrap noise on the retained Case I design and coefficient vector"
+}

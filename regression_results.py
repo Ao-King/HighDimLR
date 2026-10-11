@@ -22,7 +22,7 @@ METHODS = ("SC", "Ridge", "Landweber", "Showalter", "ARk", "SOAR", "Nesterov")
 METRICS = ("coverage_original", "coverage_debiased", "l2_original", "l2_debiased",
            "linf_original", "linf_debiased", "variance_absolute_error_original",
            "variance_absolute_error_debiased")
-PERCENTILES = dict(zip(METHODS, (50, 0, 72.5, 90, 0, 5, 95)))
+PERCENTILES = dict(zip(METHODS, (50, 0, 72.5, 90, 0, 60, 95)))
 
 
 def _json(value):

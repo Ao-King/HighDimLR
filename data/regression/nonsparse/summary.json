@@ -1,5 +1,5 @@
 {
-  "schema_version": "matrix02-nonsparse-tdp-v1",
+  "schema_version": "paper-nonsparse-tdp-v2",
   "status": "complete",
   "started_utc": "2026-10-08T12:08:27.059625+00:00",
   "configuration": {
@@ -92,7 +92,7 @@
     "HBF": {
       "step": 0.0005,
       "max_steps": 100000,
-      "eta": 5.0,
+      "eta": 10.0,
       "selection": "TDP",
       "tau": 0.6,
       "delta": 37.398009755964544
@@ -106,10 +106,10 @@
       "delta": 37.398009755964544
     },
     "SOAR": {
+      "selection": "TDP",
       "step": 0.0005,
       "max_steps": 100000,
-      "s_star": 0.5,
-      "selection": "TDP",
+      "s_star": 1.5,
       "tau": 0.6,
       "delta": 37.398009755964544
     },
@@ -380,16 +380,16 @@
     {
       "rule": "TDP",
       "method": "HBF",
-      "parameter": 2685,
-      "k0": 2685,
+      "parameter": 1390,
+      "k0": 1390,
       "diagnostics": {
         "selection": "TDP",
         "parameter_kind": "steps",
-        "selected_count": 2685,
+        "selected_count": 1390,
         "first_turn_count": null,
         "minimum_steps": null,
         "max_steps": 100000,
-        "recorded_steps": 2685,
+        "recorded_steps": 1390,
         "trace_columns": [
           "parameter",
           "coefficient_l2_error",
@@ -397,22 +397,32 @@
         ],
         "trace_includes_trigger_after_selected": false,
         "at_iteration_cap": false,
-        "residual_norm": 37.13919287408524,
-        "coefficient_l2_error": 7.128922661364929,
+        "residual_norm": 37.23342108922211,
+        "coefficient_l2_error": 7.875024582445966,
         "stopping_threshold": 37.398009755964544,
         "tdp_satisfied": true,
         "boundary_checks": [],
         "landweber_2k_max_difference": null
       },
-      "elapsed_seconds": 0.15700000000651926,
-      "ordinary_l2": 7.128922661364929,
-      "ordinary_linf": 0.8856164179619183,
-      "ordinary_residual": 37.13919287408524,
-      "ordinary_sigma": 1.174444399424044,
-      "debiased_l2": 7.452089148024186,
-      "debiased_linf": 0.8332968456527673,
-      "debiased_residual": 6.637532053701801,
-      "debiased_sigma": 0.2098971933207275
+      "elapsed_seconds": 0.07800000000861473,
+      "ordinary_l2": 7.875024582445966,
+      "ordinary_linf": 0.9180805336736457,
+      "ordinary_residual": 37.23342108922211,
+      "ordinary_sigma": 1.177424157220893,
+      "debiased_l2": 7.227118995300436,
+      "debiased_linf": 0.8727244060865245,
+      "debiased_residual": 12.902781057682065,
+      "debiased_sigma": 0.40802176292751724,
+      "eta": 10,
+      "settings": {
+        "step": 0.0005,
+        "max_steps": 100000,
+        "eta": 10.0,
+        "selection": "TDP",
+        "tau": 0.6,
+        "delta": 37.398009755964544
+      },
+      "debiased_l2_improvement_pct": 8.227346852856321
     },
     {
       "rule": "TDP",
@@ -454,16 +464,16 @@
     {
       "rule": "TDP",
       "method": "SOAR",
-      "parameter": 1218,
-      "k0": 1218,
+      "parameter": 837,
+      "k0": 837,
       "diagnostics": {
         "selection": "TDP",
         "parameter_kind": "steps",
-        "selected_count": 1218,
+        "selected_count": 837,
         "first_turn_count": null,
         "minimum_steps": null,
         "max_steps": 100000,
-        "recorded_steps": 1218,
+        "recorded_steps": 837,
         "trace_columns": [
           "parameter",
           "coefficient_l2_error",
@@ -471,22 +481,22 @@
         ],
         "trace_includes_trigger_after_selected": false,
         "at_iteration_cap": false,
-        "residual_norm": 37.34964120306527,
-        "coefficient_l2_error": 8.26707674748576,
+        "residual_norm": 37.34843926552923,
+        "coefficient_l2_error": 9.436177992392363,
         "stopping_threshold": 37.398009755964544,
         "tdp_satisfied": true,
         "boundary_checks": [],
         "landweber_2k_max_difference": null
       },
-      "elapsed_seconds": 0.046999999991385266,
-      "ordinary_l2": 8.26707674748576,
-      "ordinary_linf": 1.0273941388951564,
-      "ordinary_residual": 37.34964120306527,
-      "ordinary_sigma": 1.1810993599175772,
-      "debiased_l2": 7.1643644833966516,
-      "debiased_linf": 0.8728984204039165,
-      "debiased_residual": 12.773021259271195,
-      "debiased_sigma": 0.4039183978104908
+      "elapsed_seconds": 0.06325771473348141,
+      "ordinary_l2": 9.436177992392365,
+      "ordinary_linf": 1.0359921487145682,
+      "ordinary_residual": 37.348439265529294,
+      "ordinary_sigma": 1.181061351315388,
+      "debiased_l2": 8.420535784808008,
+      "debiased_linf": 0.9153817060860823,
+      "debiased_residual": 23.43801105017989,
+      "debiased_sigma": 0.7411749874276349
     },
     {
       "rule": "TDP",
@@ -574,5 +584,9 @@
   },
   "completed_utc": "2026-10-08T12:13:15.306607+00:00",
   "numerical_audit": "passed",
-  "numerical_audit_record": "independent_numerical_audit.json"
+  "updates": {
+    "HBF_eta": 10,
+    "SOAR_s_star": 1.5,
+    "SOAR_source_summary_sha256": "da29511c5ebab20e26f90421a2d77be909553650ae7964c4eafbfa7a0091885c"
+  }
 }

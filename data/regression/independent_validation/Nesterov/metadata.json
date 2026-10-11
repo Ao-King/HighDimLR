@@ -1,0 +1,23 @@
+{
+  "version": "independent-regression-validation-v1",
+  "status": "complete",
+  "method": "Nesterov",
+  "N": 1000,
+  "B": 500,
+  "confidence": 0.95,
+  "n": 1000,
+  "p": 1000,
+  "noise_root": 2026101802,
+  "calibration_noise_root": 2026100802,
+  "settings": {
+    "max_steps": 10000,
+    "nominal_step": 2.5e-06,
+    "omega": 5.0,
+    "selection": "TDP",
+    "step": 2.0574059723851243e-06,
+    "tau": 0.9,
+    "threshold_percentile": 35
+  },
+  "source_summary_sha256": "75bb3f263a80817c29f0b1003d0730046552d0d13c8d5289ea6b09ac72946449",
+  "independence_scope": "Fresh outer and bootstrap noise on the retained Case I design and coefficient vector"
+}

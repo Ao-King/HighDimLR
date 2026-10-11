@@ -39,7 +39,7 @@ def formal_settings(design, rule):
         "Showalter": {"step": 3e-6, "max_steps": 100000},
         "HBF": {"step": 5e-4, "max_steps": 100000, "eta": 5.0},
         "ARk": {"step": 5e-5, "max_steps": 2000, "kappa": .5},
-        "SOAR": {"step": 5e-4, "max_steps": 100000, "s_star": .5},
+        "SOAR": {"step": 5e-4, "max_steps": 100000, "s_star": 1.5},
         "Nesterov": {"step": nesterov_step, "nominal_step": 3e-6,
                      "max_steps": 100000, "omega": 3},
         "FAR": {"step": 5e-4, "max_steps": 2000, "theta": 1.8},

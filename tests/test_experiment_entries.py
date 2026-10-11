@@ -308,14 +308,14 @@ class ExperimentEntryTests(unittest.TestCase):
                 self.assertEqual(resumed[key], baseline[key])
             self.assertTrue((Path(resumed['run'].directory) / 'summary.csv').exists())
 
-    def test_bootstrap_threshold_percentiles_match_historical_settings(self):
+    def test_bootstrap_threshold_percentiles_match_current_notebook_settings(self):
         from regression_results import PERCENTILES
 
         expected = {
             'Bootstrapcut': ('SC', 50), 'Bootstrapridge': ('Ridge', 0),
             'Bootstraplandweber': ('Landweber', 72.5),
             'Bootstrapshowalter': ('Showalter', 90), 'BootstrapARk': ('ARk', 0),
-            'Bootstrapsecond': ('SOAR', 5), 'BootstrapNesterov': ('Nesterov', 95),
+            'Bootstrapsecond': ('SOAR', 60), 'BootstrapNesterov': ('Nesterov', 95),
         }
         self.assertEqual(PERCENTILES, dict(expected.values()))
         for name, (method, percentile) in expected.items():

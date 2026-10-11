@@ -6,6 +6,41 @@
       "bytes": 8008177
     },
     {
+      "path": "data/plotting/pde/ARk_plot_data.mat",
+      "sha256": "91da8de09d516914b5831e0454f2de05e6c7d7774f402e5363a5fb68b44e4b4d",
+      "bytes": 68782
+    },
+    {
+      "path": "data/plotting/pde/FAR_plot_data.mat",
+      "sha256": "4a26e3188d696a63462248054687e45160bc03ef009a64cf6e3d1fca3a2e01b8",
+      "bytes": 68793
+    },
+    {
+      "path": "data/plotting/pde/HBF_plot_data.mat",
+      "sha256": "20377dd0614a2770f5098131f45d636bdb391c9b241aeaced43fa7a5fc8ccdc7",
+      "bytes": 68831
+    },
+    {
+      "path": "data/plotting/pde/Landweber_plot_data.mat",
+      "sha256": "62e1d6f7051488932e53611f29467e5590de44d7f160a4b2121c84740fe0203c",
+      "bytes": 68382
+    },
+    {
+      "path": "data/plotting/pde/Nesterov_plot_data.mat",
+      "sha256": "5a4476f16d4953ff33212c22aad34d77f1fa20a249788638f284bbad012bfa27",
+      "bytes": 68826
+    },
+    {
+      "path": "data/plotting/pde/Showalter_plot_data.mat",
+      "sha256": "6cb794840082139c3054412bf4c5ffeaf89af5d04e8a112833b2fe50358e05dd",
+      "bytes": 68843
+    },
+    {
+      "path": "data/plotting/pde/SOAR_plot_data.mat",
+      "sha256": "0d250326f83422e91bfb176969db64593cb3325a1baa616c221de7064ec85fe0",
+      "bytes": 68821
+    },
+    {
       "path": "data/regression/caseI/data.npz",
       "sha256": "83a571d0162e5a5e07cb812e02fb3d91ca703f2f8a9d3cdc7d4ab074126e9673",
       "bytes": 7714629
@@ -62,8 +97,8 @@
     },
     {
       "path": "data/regression/caseI/point/laplace_soar.npz",
-      "sha256": "b025701471b2cac915b0882bfd3295f49a27a9154ea1eabbd40706fec19f898d",
-      "bytes": 82300
+      "sha256": "08f677c422efe081aab40d53e222421ebc1a8721589acc39e90c2fcbde6f34b4",
+      "bytes": 82322
     },
     {
       "path": "data/regression/caseI/point/normal_ark.npz",
@@ -117,8 +152,13 @@
     },
     {
       "path": "data/regression/caseI/point/normal_soar.npz",
-      "sha256": "212cca7d1d2519c7673459bda242e6bd93b04fc55397afc4dfd6edd1d5e724c4",
-      "bytes": 82300
+      "sha256": "1488bb2e9a9f73b74ec23c6517f51c52208668159226145f1e6683c3d93a2649",
+      "bytes": 82322
+    },
+    {
+      "path": "data/regression/caseI/svd.npz",
+      "sha256": "409a551003d204c3c947d252f91c671f105cc3b507194401ee644418c56e2147",
+      "bytes": 16008726
     },
     {
       "path": "data/regression/caseII/data.npz",
@@ -177,8 +217,8 @@
     },
     {
       "path": "data/regression/caseII/point/laplace_soar.npz",
-      "sha256": "6f60becdae09a1d86fded597e7f491df20e45c1dc68d049b78f9db652a9831d9",
-      "bytes": 102300
+      "sha256": "7531194e5d10793c187f3a0ad915c7d97d469d70e1b9f7862daf3fba58813700",
+      "bytes": 102322
     },
     {
       "path": "data/regression/caseII/point/normal_ark.npz",
@@ -232,13 +272,8 @@
     },
     {
       "path": "data/regression/caseII/point/normal_soar.npz",
-      "sha256": "e77b35b9e835c5a67d9c367cb8cb9447527a1aa8e069de702a3c9acbb0989523",
-      "bytes": 102300
-    },
-    {
-      "path": "data/regression/caseI/svd.npz",
-      "sha256": "409a551003d204c3c947d252f91c671f105cc3b507194401ee644418c56e2147",
-      "bytes": 16008726
+      "sha256": "a42665c677847b831c2c0969af3cc076149aaee880bc519de96d13d57c0fcff5",
+      "bytes": 102322
     },
     {
       "path": "data/regression/caseII/svd.npz",
@@ -252,13 +287,8 @@
     },
     {
       "path": "data/regression/nonsparse/estimates.npz",
-      "sha256": "8bb71b9ad4a5630b209307b976016e83ff1f7de1f2bc45319b52806bb4021eea",
-      "bytes": 157978
-    },
-    {
-      "path": "data/regression/nonsparse/traces.npz",
-      "sha256": "0d518d82d59755468232b699301223347a1d118cb1217e6477ce5b4dae341b96",
-      "bytes": 434825
+      "sha256": "f65673c575e18addf01b2b6dbd16a7c6c17a2095a3975308423e2bd116990b14",
+      "bytes": 157925
     },
     {
       "path": "data/regression/nonsparse/hbf_eta10/estimates.npz",
@@ -269,6 +299,11 @@
       "path": "data/regression/nonsparse/hbf_eta10/traces.npz",
       "sha256": "c34ceee2c59142d6ab5673d1a07c9fe7bed2896b5853206e3a98a9a9ad01c7f4",
       "bytes": 136152
+    },
+    {
+      "path": "data/regression/nonsparse/traces.npz",
+      "sha256": "c3e750347279cc90bc634e087988b57f243a665708bde2f42acb41871aff9121",
+      "bytes": 406312
     }
   ]
 }

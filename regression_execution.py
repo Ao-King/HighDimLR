@@ -11,7 +11,7 @@ def method_settings(method, n, largest_singular_value):
         'Landweber': dict(selection='AOSR', step=2.5e-6, max_steps=10000, minimum_steps=500),
         'Showalter': dict(selection='TDP', step=2.5e-6, max_steps=10000, tau=0.9),
         'ARk': dict(selection='TDP', step=5e-5, max_steps=1000, tau=0.9, kappa=0.5),
-        'SOAR': dict(selection='TDP', step=2.5e-4, max_steps=10000, tau=1.01, s_star=0.5),
+        'SOAR': dict(selection='TDP', step=2.5e-4, max_steps=10000, tau=1.01, s_star=1.5),
         'Nesterov': dict(selection='TDP', step=2.5e-6, max_steps=10000, tau=1.01,
                          omega=5, nominal_step=2.5e-6),
     }

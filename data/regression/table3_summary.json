@@ -71,18 +71,18 @@
     "SOAR": {
       "records": 1000,
       "recomputed": {
-        "coverage_I": 0.824,
-        "coverage_II": 0.951,
-        "l2_I": 2.0508410591486506,
-        "l2_II": 1.9262367016149458,
-        "linf_I": 0.7040370181418721,
-        "linf_II": 0.7002060675362191,
-        "variance_error_I": 6.12311232956702,
-        "variance_error_II": 5.459033630704618
+        "coverage_I": 0.004,
+        "coverage_II": 0.949,
+        "l2_I": 2.5029763256131874,
+        "l2_II": 1.9692332170091815,
+        "linf_I": 0.824266926765158,
+        "linf_II": 0.7065961935154444,
+        "variance_error_I": 9.22945081152827,
+        "variance_error_II": 5.699664212946127
       },
       "coverage_counts": [
-        824,
-        951
+        4,
+        949
       ]
     },
     "Nesterov": {

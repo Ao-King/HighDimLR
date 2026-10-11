@@ -167,13 +167,13 @@ def lasso_grid(X, y, truth, label, least_squares):
     return coefficients[best_index], float(grid[best_index]), diagnostic
 
 
-def main():
+def main(methods=METHODS):
     DEST.mkdir(parents=True, exist_ok=True)
     with np.load(DATA, allow_pickle=False) as archive:
         X, truth = archive['X'], archive['beta']
     hashes = dict(X_hash=_array_hash(X), beta_hash=_array_hash(truth))
     source_files = [Path(__file__), ROOT/'regression_common.py', ROOT/'regression_spectral.py',
-                    ROOT/'regression_threshold_scan.py', ROOT/'regression_results.py']
+                    ROOT/'regression_threshold_scan.py', ROOT/'regression_results.py', ROOT/'paper_regression_config.py']
     source_hashes = {str(path):sha(path) for path in source_files}
     source_directory=DEST/'sources'
     source_directory.mkdir(exist_ok=True)
@@ -181,7 +181,7 @@ def main():
         shutil.copy2(source,source_directory/source.name)
     metadata = dict(version='matrix2-caseII-point-v1', status='running', **hashes,
                     noise_root=2026100802, index=0, n=1000, p=1500, rows=[],
-                    noise_variance=4., fixed_before_evaluation=True,
+                    noise_variance=4., fixed_before_evaluation=True, methods=list(methods),
                     noise_rule='default_rng((2026100802,0,0,0)) freshly initialized per distribution',
                     normal_noise=dict(distribution='Normal', mean=0., standard_deviation=2.),
                     laplace_noise=dict(distribution='Laplace', location=0., scale=float(np.sqrt(2))),
@@ -199,8 +199,8 @@ def main():
             noise = rng.normal(0.,2.,1000) if distribution=='Normal' else rng.laplace(0.,np.sqrt(2),1000)
             response = X@truth+noise
             np.savez(DEST/f'{distribution.lower()}_data.npz', X=X, beta=truth, noise=noise, response=response)
-            least_squares = np.linalg.lstsq(X,response,rcond=None)[0]
-            for method in METHODS:
+            least_squares = np.linalg.lstsq(X,response,rcond=None)[0] if any(m in ('LS','Lasso') for m in methods) else None
+            for method in methods:
                 started = time.monotonic()
                 applicable = method not in ('LS','Lasso')
                 diagnostics = {}
@@ -274,21 +274,22 @@ def main():
                 print(json.dumps(dict(event='point_row_complete',distribution=distribution,method=method,
                                       parameter=row['parameter'],raw_l2=[row['raw_l2_I'],row['raw_l2_II']],
                                       l2=[row['l2_I'],row['l2_II']],seconds=time.monotonic()-started)),flush=True)
-    if len(metadata['rows'])!=22:
+    expected_rows = 2*len(methods)
+    if len(metadata['rows'])!=expected_rows:
         raise AssertionError('Incomplete point table')
     metadata['status']='complete'
-    metadata['completed_rows']=22
+    metadata['completed_rows']=expected_rows
     (DEST/'summary.json').write_text(json.dumps(metadata,indent=2,allow_nan=False),encoding='utf-8')
     with (DEST/'statistics_table.csv').open('w',newline='',encoding='utf-8-sig') as stream:
         writer=csv.DictWriter(stream,fieldnames=list(metadata['rows'][0]))
         writer.writeheader()
         for row in metadata['rows']:
             writer.writerow(dict(row,settings=json.dumps(row['settings'],sort_keys=True)))
-    audit=dict(status='passed',rows=22,**hashes,noise_root=2026100802,index=0,noise_variance=4.,
+    audit=dict(status='passed',rows=expected_rows,**hashes,noise_root=2026100802,index=0,noise_variance=4.,
                checks=checks,source_sha256=source_hashes,validation_tolerance=1e-9,
                no_existing_archives_modified=True)
     (DEST/'audit.json').write_text(json.dumps(audit,indent=2,allow_nan=False),encoding='utf-8')
-    print(json.dumps(dict(event='point_table_complete',rows=22,path=str(DEST/'summary.json'))),flush=True)
+    print(json.dumps(dict(event='point_table_complete',rows=expected_rows,path=str(DEST/'summary.json'))),flush=True)
 
 
 if __name__=='__main__':
@@ -296,6 +297,9 @@ if __name__=='__main__':
     parser.add_argument('--data', type=Path, default=DATA)
     parser.add_argument('--svd', type=Path, default=SVD)
     parser.add_argument('--output', type=Path, default=DEST)
+    parser.add_argument('--methods', nargs='+', choices=METHODS, default=list(METHODS))
     args = parser.parse_args()
+    if len(set(args.methods)) != len(args.methods):
+        parser.error('Methods must not repeat')
     DATA, SVD, DEST = args.data, args.svd, args.output
-    main()
+    main(args.methods)
